@@ -8,16 +8,18 @@
 </head>
 <body>
   
-  <header>
+  <header class="header">
     <div class="container header__container">
-      <nav class="nav">
+      <nav class="nav header__nav">
+        <img class="nav__decor" src="./img/Decor.png" alt="Декоративное изображение" aria-hidden="true">
+
         <ul class="nav__list nav__list--left">
           <li class="nav__item"><a href="#home" class="nav__link">home</a></li>
           <li class="nav__item"><a href="#about" class="nav__link">about</a></li>
           <li class="nav__item"><a href="#team" class="nav__link">team</a></li>
           <li class="nav__item"><a href="#booking" class="nav__link">booking</a></li>
         </ul>
-        <img src="./img/Decor.png" alt="Декоративное изображение" aria-hidden="true">
+
         <ul class="nav__list nav__list--right">
           <li class="nav__item"><a href="#menu" class="nav__link">menu</a></li>
           <li class="nav__item"><a href="#galerie" class="nav__link">galerie</a></li>
@@ -25,26 +27,29 @@
           <li class="nav__item"><a href="#contact" class="nav__link">contact</a></li>
         </ul>
       </nav>
-      </nav>
-      <div class="operating">
-        <h6 class="operating__mode">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</h6>
+
+      <div class="header__content">
+        <span class="header__operating-mode">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</span>
+
+        <div class="header__box">
+          <span class="subtitle header__subtitle">restaurant</span>
+
+          <h1 class="header__title">hungry people</h1>
+
+          <div class="header__buttons">
+            <button class="btn btn__action header__btn header__btn--action">book table</button>
+            <button class="btn header__btn header__btn--default">explore</button>
+          </div>
+        </div>
+
         <nav class="social">
-          <div class="social__item"></div>
-          <div class="social__item"></div>
-          <div class="social__item"></div>
+          <div class="social__nav__icon"></div>
+          <div class="social__nav__icon"></div>
+          <div class="social__nav__icon"></div>
         </nav>
       </div>
-      <span class="header__title"> RESTAURANT</h5>
-      <h1 class="header__subtitle">hungry people</h1>
-      <div class="header__buttons">
-        <button class="btn btn__action header__btn header__btn--action">book table</button>
-        <button class="btn header__btn header__btn--default">explore</button>
-      </div>
-    </div>
-    
-      <button class="btn-down">
-        <img src="./img/.png" alt="">
-      </button>
+
+      <button class="header__down-btn"><img src="./img/.png" alt=""></button>
     </div>
   </header>
 </body>
