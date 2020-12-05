@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
   order: -1;
   margin: 0 auto;
 }
-.header nav__list {
+.header nav__list--left__list {
   flex-basis: calc(50% - 140px);
 }
 
