@@ -15,30 +15,29 @@ $ff1:'Open Sans', sans-serif
   background: url(../photo/header-bg.jpg) no-repeat center 
   background-size: cover
   height: 100vh
-  .nav
+.nav
+  display: flex
+  &__list
+    justify-content: space-between
     display: flex
-    &__list
-      justify-content: space-between
-      display: flex
-      flex-basis: calc( 50% - 140px )
-      &--left
-        order: -1
-        .nav__link
-          display: flex
-          align-items: center
-          padding: 0 15px
-          color: #ffffff
-          font-weight: 700
-          font-family: $ff1
-          text-transform: uppercase
-          font-size: 12px
-          &:hover
-            color: #F4CA16
-            transition: 0.2s liner
-      
-    &__decor
-      margin: 0 auto
-      padding-top: 25px
+    flex-basis: calc( 50% - 140px )
+    &--left
+      order: -1
+  &__link
+    display: flex
+    align-items: center
+    padding: 0 15px
+    color: #ffffff
+    font-weight: 700
+    font-family: $ff1
+    text-transform: uppercase
+    font-size: 12px
+    &:hover
+      color: #F4CA16
+      transition: 0.2s liner  
+  &__decor
+    margin: 0 auto
+    padding-top: 25px
     
   
 
