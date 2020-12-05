@@ -17,11 +17,17 @@ $ff1:'Open Sans', sans-serif
   height: 100vh
   .nav
     display: flex
-    &__list--left
-      order: -1
+    padding-top: 25px
+    &__list
+      align-self: center
+      justify-content: space-between
+      display: flex
+      flex-basis: calc( 50% - 140px )
+      &--left
+        order: -1
+    &__decor
       margin: 0 auto
-      &__list
-        flex-basis: calc(50% - 140px)
+      align-self: flex-start
 
     
   

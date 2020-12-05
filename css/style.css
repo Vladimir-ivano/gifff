@@ -57,13 +57,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header .nav {
   display: flex;
+  padding-top: 25px;
+}
+.header .nav__list {
+  align-self: center;
+  justify-content: space-between;
+  display: flex;
+  flex-basis: calc( 50% - 140px );
 }
 .header .nav__list--left {
   order: -1;
-  margin: 0 auto;
 }
-.header .nav__list--left__list {
-  flex-basis: calc(50% - 140px);
+.header .nav__decor {
+  margin: 0 auto;
+  align-self: flex-start;
 }
 
 /*# sourceMappingURL=style.css.map */
