@@ -18,13 +18,15 @@ $ff1:'Open Sans', sans-serif
   .nav
     display: flex
     &__list
-      padding-top: 25px
-      align-self: baseline
       justify-content: space-between
       display: flex
       flex-basis: calc( 50% - 140px )
       &--left
         order: -1
+        .nav__item
+          display: flex
+          align-items: center
+          padding: 0 15px
         .nav__link
           color: #ffffff
           font-weight: 700
@@ -34,17 +36,7 @@ $ff1:'Open Sans', sans-serif
           &:hover
             color: #F4CA16
             transition: 0.2s liner
-      &--right
-        order: 0
-        .nav__link
-          color: #ffffff
-          font-weight: 700
-          font-family: $ff1
-          text-transform: uppercase
-          font-size: 12px
-          &:hover
-            color: #F4CA16
-            transition: 0.2s liner
+      
     &__decor
       margin: 0 auto
       padding-top: 25px
