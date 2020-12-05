@@ -10,19 +10,23 @@ $ff1:'Open Sans', sans-serif
   margin: 0 auto
   height: 100%
   width: 100%
-  padding: 0 80px
+  padding: 0 15px
 .header
   background: url(../photo/header-bg.jpg) no-repeat center 
   background-size: cover
   height: 100vh
 .nav
   display: flex
+  padding-top: 25px
   &__list
     justify-content: space-between
     display: flex
     flex-basis: calc( 50% - 140px )
     &--left
       order: -1
+  &__item
+    display: flex
+    height: 50%
   &__link
     display: flex
     align-items: center
@@ -37,7 +41,14 @@ $ff1:'Open Sans', sans-serif
       transition: 0.2s liner  
   &__decor
     margin: 0 auto
-    padding-top: 25px
-    
+.header__content
+  color: #ffffff
+  display: flex
+  .header__operating-mode
+    transform: rotate(-90deg)
+    text-align: right
+    margin: auto
+  .header__box
+    margin: 0 auto
   
 

@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   height: 100%;
   width: 100%;
-  padding: 0 80px;
+  padding: 0 15px;
 }
 
 .header {
@@ -58,6 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav {
   display: flex;
+  padding-top: 25px;
 }
 .nav__list {
   justify-content: space-between;
@@ -66,6 +67,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .nav__list--left {
   order: -1;
+}
+.nav__item {
+  display: flex;
+  height: 50%;
 }
 .nav__link {
   display: flex;
@@ -83,7 +88,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 .nav__decor {
   margin: 0 auto;
-  padding-top: 25px;
+}
+
+.header__content {
+  color: #ffffff;
+  display: flex;
+}
+.header__content .header__operating-mode {
+  transform: rotate(-90deg);
+  text-align: right;
+  margin: auto;
+}
+.header__content .header__box {
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
