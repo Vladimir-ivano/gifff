@@ -1,28 +1,25 @@
-*
-  padding: 0
-  margin: 0
-  border: 0
-*,*:before,*:after
-  box-sizing: border-box
-body
-  margin: 0
-input, button, textarea
-  font-family: inherit
-input
-  display: block
-buttom
-  cursor: pointer
-a
-  text-decoration: none
-a:hover
-  text-decoration: none
-ul, li
-  list-style: none
-h1, h2, h3, h4, h5, h6
-  font-size: inherit
-  font-weight: inherit
-// *------------------*//import css-variables from 
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&family=Open+Sans:wght@400;700&display=swap')
+$ff: 'Delius Unicase', cursive
+$ff1:'Open Sans', sans-serif 
+
+
+@import "_var.sass"
+//-------
+.container
+  max-width: 1441px
+  margin: 0 auto
+  width: 100%
+  padding: 0 15px
+.header
+  background: url(../photo/header-bg.jpg) no-repeat center 
+  background-size: cover
+  height: 100pv
+  nav
+    display: flex
+    
+  &--left
+    display: flex
+    flex-flow: wrap
+    
   
-
-
 
