@@ -93,14 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 .header__content {
   color: #ffffff;
   display: flex;
-}
-.header__content .header__operating-mode {
-  transform: rotate(-90deg);
-  text-align: right;
-  margin: auto;
-}
-.header__content .header__box {
-  margin: 0 auto;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
