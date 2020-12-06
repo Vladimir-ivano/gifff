@@ -60,6 +60,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   padding-top: 25px;
   align-items: flex-start;
+  margin-bottom: 151px;
 }
 .nav__list {
   justify-content: space-between;
@@ -96,6 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 .header__content {
   color: #ffffff;
   display: flex;
+  justify-content: space-between;
 }
 .header__content .header__operating-mode {
   transform: rotate(-90deg);
