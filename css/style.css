@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   display: flex;
   flex-basis: calc( 50% - 140px );
-  border-bottom: 1px solid rgba(80, 61, 52, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 .nav__list--left {
   order: -1;
@@ -96,7 +96,9 @@ h1, h2, h3, h4, h5, h6 {
 .header__content {
   color: #ffffff;
   display: flex;
-  align-items: center;
+}
+.header__content .header__operating-mode {
+  transform: rotate(-90deg);
 }
 
 /*# sourceMappingURL=style.css.map */
