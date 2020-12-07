@@ -71,6 +71,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 18px;
 }
 .header__operating-mode {
+  display: block;
+  width: 308px;
   transform-origin: left;
   transform: rotate(-90deg) translate(-50%, 50%);
 }
