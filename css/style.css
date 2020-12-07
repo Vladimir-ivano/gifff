@@ -101,14 +101,28 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   margin-bottom: 35px;
 }
-.header__buttons {
-  vertical-align: top;
+.header__btn {
   display: inline-block;
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
+  text-transform: uppercase;
   font-weight: 700;
   line-height: 1.6;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 20px 65px;
+}
+.header__btn btn--action {
+  background: #E8C300;
+}
+.header__btn:hover {
+  background: #E8C300;
+  transition: 0.2s linear;
+}
+.header__btn--default {
+  padding: 20px 70px;
 }
 
 .nav {

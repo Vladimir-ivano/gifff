@@ -54,14 +54,25 @@ $ff1:'Open Sans', sans-serif
       border-radius: 50px
       margin: 0 auto
       margin-bottom: 35px
-  &__buttons
-    vertical-align: top
+  &__btn
     display: inline-block
     color: #fff
     font-family: $ff1
     font-size: 12px
+    text-transform: uppercase
     font-weight: 700
     line-height: 1.6
+    background-color: rgba(255,255,255 ,0)
+    border: 1px solid #fff
+    border-radius: 5px
+    padding: 20px 65px
+    btn--action
+      background: #E8C300
+    &:hover
+      background: #E8C300
+      transition: 0.2s linear
+  &__btn--default
+    padding: 20px 70px
 .nav
   display: flex
   padding-top: 0 25px
