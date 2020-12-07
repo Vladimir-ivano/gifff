@@ -77,13 +77,34 @@ h1, h2, h3, h4, h5, h6 {
   transform: rotate(-90deg) translate(-50%, 50%);
 }
 .header__box {
-  margin: 0 auto;
   text-align: center;
+}
+.header__subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+.header__title {
+  font-size: 96px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Delius Unicase", cursive;
+}
+.header__title::after {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 5.1px;
+  background: #E8C300;
+  border-radius: 50px;
+  margin: 0 auto;
+  margin-bottom: 35px;
 }
 .header__buttons {
   vertical-align: top;
   display: inline-block;
-  color: #5a2525;
+  color: #fff;
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
   font-weight: 700;
