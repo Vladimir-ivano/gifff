@@ -78,9 +78,11 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 .header__buttons {
+  vertical-align: top;
   display: inline-block;
-  color: #ffffff;
+  color: #fff;
   font-family: "Open Sans", sans-serif;
+  font-size: 12px;
   font-weight: 700;
   font-height: 1.6;
 }
