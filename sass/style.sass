@@ -35,6 +35,8 @@ $ff1:'Open Sans', sans-serif
     
   &__box
     text-align: center
+    border-right: 2px solid rgba(255,255,255 ,0.5)
+    border-left: 2px solid rgba(255,255,255 ,0.5)
   &__subtitle
     font-family: $ff1
     font-weight: 700
@@ -55,6 +57,7 @@ $ff1:'Open Sans', sans-serif
       margin: 0 auto
       margin-bottom: 35px
   &__btn
+    justify-self: center
     display: inline-block
     color: #fff
     font-family: $ff1
@@ -65,14 +68,22 @@ $ff1:'Open Sans', sans-serif
     background-color: rgba(255,255,255 ,0)
     border: 1px solid #fff
     border-radius: 5px
-    padding: 20px 65px
+    margin-left: -5px
+
     btn--action
       background: #E8C300
+      
     &:hover
       background: #E8C300
       transition: 0.2s linear
   &__btn--default
-    padding: 20px 70px
+  &__down-btn
+    margin: 0 auto
+    height: 40px
+    width: 40px
+    border-radius: 50%
+    background: #fff
+
 .nav
   display: flex
   padding-top: 0 25px
@@ -105,6 +116,23 @@ $ff1:'Open Sans', sans-serif
       z-index: 1
   &__decor
     margin: 0 auto
+.social
+
+  &__item
+    display: flex
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    border: 1px solid #fff
+    margin-bottom: 20px
+  
+  &__link
+    fill: #fff
+    height: 40px
+
+
+
+
 
 
 

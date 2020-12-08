@@ -10,10 +10,16 @@
 
 <body>
 
+<svg style="display: none;">
+<symbol id="facebook" viewBox="0 0 24 24">
+  <path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/>
+</symbol>
+</svg>
+
   <header class="header">
     <div class="container header__container">
       <nav class="nav header__nav">
-        
+
         <img class="nav__decor" src="./photo/Decor.png" alt="Декоративное изображение" aria-hidden="true">
 
         <ul class="nav__list nav__list--left">
@@ -34,39 +40,39 @@
 
       <div class="header__content">
         <p class="header__operating-box">
-        <span class="header__operating-mode">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</span>
-      </p>
+          <span class="header__operating-mode">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</span>
+        </p>
         <div class="header__box">
           <span class="subtitle header__subtitle">restaurant</span>
 
           <h1 class="header__title">hungry people</h1>
 
           <div class="header__buttons">
-            <button class="btn btn__action header__btn header__btn--action">book table</button>
-            <button class="btn header__btn header__btn--default">explore</button>
+            <button class="btn btn__action header__btn header__btn--action" type="submit">book table</button>
+            <button class="btn header__btn header__btn--default" type="buttom">explore</button>
           </div>
-          
         </div>
 
         <ul class="social">
           <li class="social__item"><a href="#" class="social__link">
+            <svg class="social__icon">
+              <use xlink:href="#facebook"> </use>
+            </svg>
+          </a>
+        </li>
+          <li class="social__item"><a href="#" class="social__link">
             <i class="fab fa-facebook-f"></i>
           </a></li>
-          <li class="social__item"><a href="#" class="social__link">
-            <i class="fab fa-twitter"></i>
-          </a></li>
-          <li class="social__item"><a href="#" class="social__link">
-            <i class="fab fa-instagram"></i>
-
-          </a></li>
+          <li class="social__item"><a href="#" class="social__link"></a></li>
         </ul>
 
-      </div>
+    </div>
 
-      <button class="header__down-btn"><img src="./photo/icon.svg" alt=""></button>
+    <button class="header__down-btn"><img src="./photo/icon.svg" alt=""></button>
 
     </div>
   </header>
 </body>
 <script src="https://kit.fontawesome.com/550bccb057.js" crossorigin="anonymous"></script>
+
 </html>

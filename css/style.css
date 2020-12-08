@@ -78,6 +78,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header__box {
   text-align: center;
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
 }
 .header__subtitle {
   font-family: "Open Sans", sans-serif;
@@ -102,6 +104,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 35px;
 }
 .header__btn {
+  justify-self: center;
   display: inline-block;
   color: #fff;
   font-family: "Open Sans", sans-serif;
@@ -112,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid #fff;
   border-radius: 5px;
-  padding: 20px 65px;
+  margin-left: -5px;
 }
 .header__btn btn--action {
   background: #E8C300;
@@ -121,8 +124,12 @@ h1, h2, h3, h4, h5, h6 {
   background: #E8C300;
   transition: 0.2s linear;
 }
-.header__btn--default {
-  padding: 20px 70px;
+.header__down-btn {
+  margin: 0 auto;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #fff;
 }
 
 .nav {
@@ -162,6 +169,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 .nav__decor {
   margin: 0 auto;
+}
+
+.social__item {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-bottom: 20px;
+}
+.social__link {
+  fill: #fff;
+  height: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
