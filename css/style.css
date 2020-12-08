@@ -130,6 +130,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px 65px;
 }
 .header__down-btn {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
