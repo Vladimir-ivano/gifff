@@ -63,6 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 .header__content {
   color: #ffffff;
   display: flex;
+  margin: 0 auto;
   align-items: center;
   justify-content: space-between;
   flex-basis: 100%;
@@ -115,12 +116,15 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid #fff;
   border-radius: 5px;
-  margin-left: -5px;
 }
-.header__btn btn--action {
+.header__btn--action:hover {
   background: #E8C300;
+  transition: 0.2s linear;
 }
-.header__btn:hover {
+.header__btn--default {
+  padding: 20px 65px;
+}
+.header__btn--default:hover {
   background: #E8C300;
   transition: 0.2s linear;
 }
@@ -172,6 +176,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .social__item {
+  position: relative;
   display: flex;
   width: 60px;
   height: 60px;
@@ -180,8 +185,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
 }
 .social__link {
-  fill: #fff;
-  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: translate(-50%, -50%);
+  fill: #ccc;
+  height: 4px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -22,6 +22,7 @@ $ff1:'Open Sans', sans-serif
   &__content
     color: #ffffff
     display: flex
+    margin: 0 auto
     align-items: center
     justify-content: space-between
     flex-basis: 100%
@@ -68,15 +69,18 @@ $ff1:'Open Sans', sans-serif
     background-color: rgba(255,255,255 ,0)
     border: 1px solid #fff
     border-radius: 5px
-    margin-left: -5px
-
-    btn--action
+  &__btn--action
+      padding: 20px 65px
       background: #E8C300
-      
+      margin-left: 40px
     &:hover
       background: #E8C300
       transition: 0.2s linear
   &__btn--default
+    padding: 20px 65px
+    &:hover
+      background: #E8C300
+      transition: 0.2s linear
   &__down-btn
     margin: 0 auto
     height: 40px
@@ -119,6 +123,7 @@ $ff1:'Open Sans', sans-serif
 .social
 
   &__item
+    position: relative
     display: flex
     width: 60px
     height: 60px
@@ -127,8 +132,12 @@ $ff1:'Open Sans', sans-serif
     margin-bottom: 20px
   
   &__link
-    fill: #fff
-    height: 40px
+    position: absolute
+    top: 50%
+    left: 50%
+    transition: translate(-50%,-50%)
+    fill: #ccc
+    height: 4px
 
 
 
