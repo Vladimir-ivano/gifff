@@ -10,7 +10,7 @@ $ff1:'Open Sans', sans-serif
   margin: 0 auto
   height: 100%
   width: 100%
-  padding: 15px
+  padding: 100px 0
 .header
   background: url(../photo/header-bg.jpg) no-repeat center 
   background-size: cover
@@ -19,6 +19,13 @@ $ff1:'Open Sans', sans-serif
     display: flex
     flex-wrap: wrap
     align-content: space-between
+    &--top
+      padding: 40px 15px 100px
+    &--down
+      padding: 100px 40px 15px
+    &--null
+      padding: 0 15px
+      
   &__content
     color: #ffffff
     display: flex
@@ -33,12 +40,13 @@ $ff1:'Open Sans', sans-serif
     width: 308px
     transform-origin: left
     transform: rotate(-90deg)translate(-50%,50%)
-    
   &__box
     text-align: center
     border-right: 2px solid rgba(255,255,255 ,0.5)
     border-left: 2px solid rgba(255,255,255 ,0.5)
   &__subtitle
+    font-size: 12px
+    letter-spacing: 0.5em 
     font-family: $ff1
     font-weight: 700
     line-height: 14px
@@ -48,6 +56,7 @@ $ff1:'Open Sans', sans-serif
     font-weight: 700
     text-transform: uppercase
     font-family: $ff
+    margin-bottom: 35px
     &::after
       display: block
       content: ""
@@ -56,8 +65,8 @@ $ff1:'Open Sans', sans-serif
       background: #E8C300
       border-radius: 50px
       margin: 0 auto
-      margin-bottom: 35px
   &__btn
+    cursor: pointer
     justify-self: center
     display: inline-block
     color: #fff

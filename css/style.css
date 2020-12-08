@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   height: 100%;
   width: 100%;
-  padding: 15px;
+  padding: 100px 0;
 }
 
 .header {
@@ -59,6 +59,15 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
+}
+.header__container--top {
+  padding: 40px 15px 100px;
+}
+.header__container--down {
+  padding: 100px 40px 15px;
+}
+.header__container--null {
+  padding: 0 15px;
 }
 .header__content {
   color: #ffffff;
@@ -83,6 +92,8 @@ h1, h2, h3, h4, h5, h6 {
   border-left: 2px solid rgba(255, 255, 255, 0.5);
 }
 .header__subtitle {
+  font-size: 12px;
+  letter-spacing: 0.5em;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   line-height: 14px;
@@ -93,6 +104,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Delius Unicase", cursive;
+  margin-bottom: 35px;
 }
 .header__title::after {
   display: block;
@@ -102,9 +114,9 @@ h1, h2, h3, h4, h5, h6 {
   background: #E8C300;
   border-radius: 50px;
   margin: 0 auto;
-  margin-bottom: 35px;
 }
 .header__btn {
+  cursor: pointer;
   justify-self: center;
   display: inline-block;
   color: #fff;
