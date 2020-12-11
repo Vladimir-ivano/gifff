@@ -258,10 +258,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 .about__item:nth-child(2) {
   position: relative;
+  width: 100%;
 }
 .about__img {
+  display: block;
   height: 475px;
   width: 475px;
+}
+.about__imgs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: rotate(-50%, 50%);
+  z-index: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
