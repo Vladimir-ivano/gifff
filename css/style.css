@@ -48,6 +48,16 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   width: 100%;
   padding: 100px 0;
+  /*header========== */
+}
+.container--top {
+  padding: 40px 15px 100px;
+}
+.container--down {
+  padding: 100px 40px 15px;
+}
+.container--null {
+  padding: 0 15px;
 }
 
 .header {
@@ -59,15 +69,6 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
-}
-.header__container--top {
-  padding: 40px 15px 100px;
-}
-.header__container--down {
-  padding: 100px 40px 15px;
-}
-.header__container--null {
-  padding: 0 15px;
 }
 .header__content {
   color: #ffffff;
@@ -153,6 +154,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff;
 }
 
+/*nav========== */
 .nav {
   display: flex;
   padding-top: 0 25px;
@@ -193,21 +195,73 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .social__item {
-  position: relative;
-  display: flex;
   width: 60px;
   height: 60px;
   border-radius: 50%;
   border: 1px solid #fff;
   margin-bottom: 20px;
 }
+.social__item:hover {
+  background-color: #F4CA16;
+  transition: 0.2s liner;
+}
 .social__link {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transition: translate(-50%, -50%);
-  fill: #ccc;
-  height: 4px;
+  display: flex;
+  height: 100%;
+  color: #fff;
+  font-size: 40px;
+}
+.social__link i {
+  margin: auto;
+}
+
+/*section========== */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about__item {
+  flex-basis: 50%;
+  margin-right: 80px;
+  margin: auto;
+}
+.about__item:last-child {
+  margin-right: 0;
+}
+.about__content {
+  font-weight: 700;
+  text-align: center;
+}
+.about .subtitle {
+  font-size: 36px;
+  font-family: "Delius Unicase", cursive;
+  text-transform: uppercase;
+}
+.about .subtitle::after {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 5.1px;
+  background: #E8C300;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+.about .title {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Open Sans", sans-serif;
+  margin: 20px 0;
+}
+.about .text {
+  font-weight: normal;
+}
+.about__item:nth-child(2) {
+  position: relative;
+}
+.about__img {
+  height: 475px;
+  width: 475px;
 }
 
 /*# sourceMappingURL=style.css.map */

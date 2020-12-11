@@ -11,6 +11,14 @@ $ff1:'Open Sans', sans-serif
   height: 100%
   width: 100%
   padding: 100px 0
+  &--top
+    padding: 40px 15px 100px
+  &--down
+    padding: 100px 40px 15px
+  &--null
+    padding: 0 15px
+  
+      
   /*header==========*/
 .header
   background: url(../photo/header-bg.jpg) no-repeat center 
@@ -20,12 +28,7 @@ $ff1:'Open Sans', sans-serif
     display: flex
     flex-wrap: wrap
     align-content: space-between
-    &--top
-      padding: 40px 15px 100px
-    &--down
-      padding: 100px 40px 15px
-    &--null
-      padding: 0 15px
+    
       
   &__content
     color: #ffffff
@@ -135,21 +138,62 @@ $ff1:'Open Sans', sans-serif
 .social
 
   &__item
-    position: relative
-    display: flex
     width: 60px
     height: 60px
     border-radius: 50%
     border: 1px solid #fff
     margin-bottom: 20px
-  
+    &:hover
+      background-color: #F4CA16
+      transition: 0.2s liner
   &__link
-    position: absolute
-    top: 50%
-    left: 50%
-    transition: translate(-50%,-50%)
-    fill: #ccc
-    height: 4px
+    display: flex
+    height: 100%
+    color: #fff
+    font-size: 40px
+    i
+      margin: auto
+/*section==========*/
+.about
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  &__item
+    flex-basis: 50%
+    margin-right: 80px
+    margin: auto
+    &:last-child
+      margin-right: 0
+  &__content
+    font-weight: 700
+    text-align: center
+  .subtitle
+    font-size: 36px
+    font-family: $ff
+    text-transform: uppercase
+    &::after
+      display: block
+      content: ""
+      width: 60px
+      height: 5.1px
+      background: #E8C300
+      border-radius: 50px
+      margin: 0 auto
+  .title
+    font-size: 14px
+    line-height: 24px
+    font-family: $ff1
+    margin: 20px 0
+  .text
+    font-weight: normal
+  &__item:nth-child(2)
+    position: relative
+  &__img
+    height: 475px
+    width: 475px
+    &::before
+      c
+
 
 
 
