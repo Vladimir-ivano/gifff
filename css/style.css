@@ -217,6 +217,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*section========== */
 .about {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -257,7 +258,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 .about__item:nth-child(2) {
-  position: relative;
   width: 100%;
 }
 .about__img {
@@ -267,9 +267,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .about__imgs {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: rotate(-50%, 50%);
+  top: 0%;
+  left: 76%;
+  transform: rotate(0%, 76%);
   z-index: 1;
 }
 
