@@ -266,10 +266,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 475px;
 }
 .about__imgs {
+  display: block;
   position: absolute;
-  top: 0%;
-  left: 76%;
-  transform: rotate(0%, 76%);
+  top: 2%;
+  left: 75%;
+  transform: rotate(-2, -75%);
   z-index: 1;
 }
 
