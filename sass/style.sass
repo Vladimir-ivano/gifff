@@ -154,41 +154,44 @@ $ff1:'Open Sans', sans-serif
     i
       margin: auto
 /*section==========*/
+.subtitle
+  font-size: 36px
+  font-family: $ff
+  text-transform: uppercase
+  &::after
+    display: block
+    content: ""
+    width: 60px
+    height: 5.1px
+    background: #E8C300
+    border-radius: 50px
+    margin: 0 auto
+.title
+  font-weight: 700
+  font-size: 14px
+  line-height: 24px
+  font-family: $ff1
+  margin: 20px 0
+.text
+  font-weight: normal
+
 .about
   position: relative
   display: flex
   flex-wrap: wrap
   justify-content: space-between
+  &__content
+    font-weight: 700
+    text-align: center
   &__item
     flex-basis: 50%
     margin-right: 80px
     margin: auto
+    &:nth-child(2)
+    width: 100%
     &:last-child
       margin-right: 0
-  &__content
-    font-weight: 700
-    text-align: center
-  .subtitle
-    font-size: 36px
-    font-family: $ff
-    text-transform: uppercase
-    &::after
-      display: block
-      content: ""
-      width: 60px
-      height: 5.1px
-      background: #E8C300
-      border-radius: 50px
-      margin: 0 auto
-  .title
-    font-size: 14px
-    line-height: 24px
-    font-family: $ff1
-    margin: 20px 0
-  .text
-    font-weight: normal
-  &__item:nth-child(2)
-    width: 100%
+
   &__img
     display: block
     height: 475px
@@ -200,6 +203,29 @@ $ff1:'Open Sans', sans-serif
     left: 75%
     transform: rotate(-2,-75% )
     z-index: 1
+/*section__two==========*/
+.section__two
+  background: url(../photo/header-bg.jpg) no-repeat center
+  background-size: cover
+.ourteam
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  &__content
+    color: #fff
+    text-align: center
+    font-weight: 700
+  &__item
+    flex-basis: 50%
+    width: 100%
+    margin: auto
+    &:nth-child(2)
+      order: -1
+  &__img
+    display: block
+    height: 475px
+    width: 475px
+
 
     
 
