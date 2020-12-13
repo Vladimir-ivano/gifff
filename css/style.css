@@ -255,8 +255,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .about__item {
   flex-basis: 50%;
-  margin-right: 80px;
-  margin: auto;
+  align-self: center;
   width: 100%;
 }
 .about__item:last-child {
@@ -303,7 +302,7 @@ h1, h2, h3, h4, h5, h6 {
 .ourteam__img {
   display: block;
   height: 475px;
-  width: 475px;
+  width: 475p;
 }
 
 /*# sourceMappingURL=style.css.map */
