@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 40px 15px 100px;
 }
 .container--down {
-  padding: 100px 40px 15px;
+  padding: 100px 15px 40px;
 }
 .container--null {
   padding: 0 15px;
