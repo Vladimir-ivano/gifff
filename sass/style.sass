@@ -6,7 +6,7 @@ $ff1:'Open Sans', sans-serif
 @import "_var.sass"
 //-------
 .container
-  max-width: 1200px
+  max-width: 1280px
   margin: 0 auto
   height: 100%
   width: 100%
@@ -176,17 +176,17 @@ $ff1:'Open Sans', sans-serif
   font-weight: normal
 
 .about
-  position: relative
   display: flex
   flex-wrap: wrap
-  justify-content: space-between
+  
   &__content
     font-weight: 700
     text-align: center
   &__item
+    position: relative
     flex-basis: 50%
     align-self: center
-
+    margin-right: 60px
     &:nth-child(2)
     width: 100%
     &:last-child
@@ -198,9 +198,8 @@ $ff1:'Open Sans', sans-serif
   &__imgs
     display: block
     position: absolute
-    top: 2%
-    left: 75%
-    transform: rotate(-2,-75% )
+    top: 50%
+    transform: translate( 0,-50%)
     z-index: 1
 /*section__two==========*/
 .section__two
@@ -227,7 +226,7 @@ $ff1:'Open Sans', sans-serif
     margin: 0 auto
     display: block
     height: 475px
-    width: 475p
+    width: 475px
 
     
 
