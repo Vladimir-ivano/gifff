@@ -293,7 +293,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 .ourteam__item {
-  flex-basis: 50%;
+  flex-basis: 457px;
   width: 100%;
   margin: auto;
 }
