@@ -83,14 +83,14 @@ $ff1:'Open Sans', sans-serif
     border: 1px solid #fff
     border-radius: 5px
     margin-left: 40px
+    width: 200px
+    height: 60px
     &:hover
       background: #E8C300
       transition: 0.2s linear
-  &__btn--action
-      padding: 20px 55px
-      background: #E8C300
-  &__btn--default
-    padding: 20px 65px
+      color: #000
+      
+      
     
   &__down-btn
     cursor: pointer
@@ -102,6 +102,9 @@ $ff1:'Open Sans', sans-serif
     width: 40px
     border-radius: 50%
     background: #fff
+    transition: 0.2s linear
+    &:hover
+      background: #E8C300
 /*nav==========*/
 .nav
   display: flex
@@ -120,6 +123,7 @@ $ff1:'Open Sans', sans-serif
   &__item
     display: flex
   &__link
+    outline: none
     display: flex
     align-items: center
     padding: 0 15px
@@ -150,7 +154,7 @@ $ff1:'Open Sans', sans-serif
     display: flex
     height: 100%
     color: #fff
-    font-size: 40px
+    font-size: 20px
     i
       margin: auto
 /*section==========*/
@@ -183,7 +187,7 @@ $ff1:'Open Sans', sans-serif
     font-weight: 700
     text-align: center
   &__item
-    position: relative
+    
     flex-basis: 50%
     align-self: center
     margin-right: 60px
@@ -197,7 +201,7 @@ $ff1:'Open Sans', sans-serif
     width: 475px
   &__imgs
     display: block
-    position: absolute
+    
     top: 50%
     transform: translate( 0,-50%)
     z-index: 1
@@ -236,6 +240,7 @@ $ff1:'Open Sans', sans-serif
     align-self: center
     flex-basis: 50%
     &:nth-child(2)
+      margin-right: -80px
       width: 100%
     &__img
       display: block
