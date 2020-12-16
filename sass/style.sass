@@ -186,32 +186,23 @@ $ff1:'Open Sans', sans-serif
   &__content
     font-weight: 700
     text-align: center
-  &__item
-    position: relative
+  .about
+    display: flex
     justify-content: space-between
-    flex-basis: calc(100% - 680px)
-    align-self: center
-    margin-right: 60px
-    &:nth-child(2)
-    width: 100%
-    &:last-child
-      flex-basis: 680px
-      margin-right: 0
-  &__img
-    display: block
-    height: 475px
-    width: 475px
-    &::before
-      border: 20px solid #E8C300
-      border-radius: 4px
-      box-shadow: 0 0 30px rgba(0,0,0,0.5)
-      content: ''
-      height: 250px
-      position: absolute
-      transform: translateY(-50%)
-      transition-duration: .8s
-      width: 250px
-      z-index: 1
+    &__item
+      flex-basis: calc(100% - 680px)
+      margin-right: 80px
+      align-self: center
+      &__item:nth-child(2)
+        flex-basis: 680px
+        text-align: left
+        position: relative
+      
+    &__img
+      display: block
+      height: 457px
+      width: auto
+      
 /*section__two==========*/
 .section__two
   background: url(../photo/header-bg.jpg) no-repeat center
