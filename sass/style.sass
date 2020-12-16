@@ -187,24 +187,31 @@ $ff1:'Open Sans', sans-serif
     font-weight: 700
     text-align: center
   &__item
-    
-    flex-basis: 50%
+    position: relative
+    justify-content: space-between
+    flex-basis: calc(100% - 680px)
     align-self: center
     margin-right: 60px
     &:nth-child(2)
     width: 100%
     &:last-child
+      flex-basis: 680px
       margin-right: 0
   &__img
     display: block
     height: 475px
     width: 475px
-  &__imgs
-    display: block
-    
-    top: 50%
-    transform: translate( 0,-50%)
-    z-index: 1
+    &::before
+      border: 20px solid #E8C300
+      border-radius: 4px
+      box-shadow: 0 0 30px rgba(0,0,0,0.5)
+      content: ''
+      height: 250px
+      position: absolute
+      transform: translateY(-50%)
+      transition-duration: .8s
+      width: 250px
+      z-index: 1
 /*section__two==========*/
 .section__two
   background: url(../photo/header-bg.jpg) no-repeat center

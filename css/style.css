@@ -253,12 +253,15 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 .about__item {
-  flex-basis: 50%;
+  position: relative;
+  justify-content: space-between;
+  flex-basis: calc(100% - 680px);
   align-self: center;
   margin-right: 60px;
   width: 100%;
 }
 .about__item:last-child {
+  flex-basis: 680px;
   margin-right: 0;
 }
 .about__img {
@@ -266,10 +269,16 @@ h1, h2, h3, h4, h5, h6 {
   height: 475px;
   width: 475px;
 }
-.about__imgs {
-  display: block;
-  top: 50%;
-  transform: translate(0, -50%);
+.about__img::before {
+  border: 20px solid #E8C300;
+  border-radius: 4px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  content: "";
+  height: 250px;
+  position: absolute;
+  transform: translateY(-50%);
+  transition-duration: 0.8s;
+  width: 250px;
   z-index: 1;
 }
 
