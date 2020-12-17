@@ -199,9 +199,22 @@ $ff1:'Open Sans', sans-serif
         position: relative
       
     &__img
+      box-shadow: 0 0 30px rgba(0,0,0,0.5)
       display: block
       height: 457px
-      width: auto
+      width: 457px
+      &::before
+        border: 20px solid #E8C300
+        border-radius: 4px
+        box-shadow: 0 0 30px rgba(0,0,0,0.5)
+        content: ''
+        top: 50%
+        height: 250px
+        position: absolute
+        transform: translateY(-50%)
+        transition-duration: .8s
+        width: 250px
+        z-index: 1
       
 /*section__two==========*/
 .section__two

@@ -267,9 +267,23 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 .about .about__img {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
   display: block;
   height: 457px;
-  width: auto;
+  width: 457px;
+}
+.about .about__img::before {
+  border: 20px solid #E8C300;
+  border-radius: 4px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  content: "";
+  top: 50%;
+  height: 250px;
+  position: absolute;
+  transform: translateY(-50%);
+  transition-duration: 0.8s;
+  width: 250px;
+  z-index: 1;
 }
 
 /*section__two========== */
