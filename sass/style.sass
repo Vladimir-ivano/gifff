@@ -160,10 +160,11 @@ $ff1:'Open Sans', sans-serif
 /*section==========*/
 .article__inner
   display: flex
-  justify-content: space-between
+  
 .article__content:first-child
   align-self: center
   text-align: center
+  margin-right: 100px
   flex-basis: calc( 100% - 680px  )
 .title
   text-align: center
@@ -195,29 +196,13 @@ $ff1:'Open Sans', sans-serif
   font-size: 14px
   line-height: 24px
 .picture
-  overflow: hidden
+  display: block
   flex-basis: 600px
-  
   &__image
-    display: block
     height: 457px
     width: auto
     box-shadow: 0 0 30px rgba(0,0,0,0.5)
 
-    &__right
-.article__content picture picture--right
-  &::before
-    border: 20px solid #E8C300
-    border-radius: 4px
-    box-shadow: 0 0 30px rgba(0,0,0,0.5)
-    content: ''
-    top: 50%
-    height: 250px
-    position: absolute
-    transform: translateY(-50%)
-    transition-duration: .8s
-    width: 250px
-    z-index: 1
 
 
     
