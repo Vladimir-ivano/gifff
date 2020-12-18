@@ -158,6 +158,51 @@ $ff1:'Open Sans', sans-serif
     i
       margin: auto
 /*section==========*/
+.article__inner
+  display: flex
+  justify-content: space-between
+.article__content:first-child
+  align-self: center
+  text-align: center
+  flex-basis: calc( 100% - 680px  )
+.title
+  text-align: center
+  line-height: 48px
+  font-weight: 700
+  font-size: 36px
+  font-family: $ff
+  text-transform: uppercase
+  margin-bottom: 5px
+  &::after
+    display: block
+    content: ""
+    width: 60px
+    height: 5.1px
+    background: #E8C300
+    border-radius: 50px
+    margin: 0 auto
+.subtitle
+  font-weight: 700
+  font-size: 18px
+  line-height: 28px
+  font-family: $ff1
+.text
+  text-align: center
+  font-weight: normal
+  font-family: $ff1
+  font-size: 14px
+  line-height: 24px
+.picture
+  display: block
+  flex-basis: 600px
+  position: relative
+  &__image
+
+    box-shadow: 0 0 30px rgba(0,0,0,0.5)
+    height: 457px
+    width: 457px
+
+
 
     
 
