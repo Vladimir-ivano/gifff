@@ -235,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 36px;
   font-family: "Delius Unicase", cursive;
   text-transform: uppercase;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .title::after {
   display: block;
@@ -248,6 +248,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .subtitle {
+  display: block;
   font-weight: 700;
   font-size: 18px;
   line-height: 28px;
@@ -264,17 +265,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .picture {
-  display: block;
+  overflow: hidden;
   flex-basis: 600px;
-  position: relative;
 }
 .picture__image {
   display: block;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
   height: 457px;
   width: auto;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
-.picture__image::before {
+
+.article__content picture picture--right::before {
   border: 20px solid #E8C300;
   border-radius: 4px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
