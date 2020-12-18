@@ -186,6 +186,7 @@ $ff1:'Open Sans', sans-serif
   font-size: 18px
   line-height: 28px
   font-family: $ff1
+  margin-bottom: 20px
 .text
   text-align: center
   font-weight: normal
@@ -197,11 +198,22 @@ $ff1:'Open Sans', sans-serif
   flex-basis: 600px
   position: relative
   &__image
-
+    display: block
     box-shadow: 0 0 30px rgba(0,0,0,0.5)
     height: 457px
-    width: 457px
-
+    width: auto
+    &::before
+      border: 20px solid #E8C300
+      border-radius: 4px
+      box-shadow: 0 0 30px rgba(0,0,0,0.5)
+      content: ''
+      top: 50%
+      height: 250px
+      position: absolute
+      transform: translateY(-50%)
+      transition-duration: .8s
+      width: 250px
+      z-index: 1
 
 
     

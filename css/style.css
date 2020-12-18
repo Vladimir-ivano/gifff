@@ -252,6 +252,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   line-height: 28px;
   font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
 }
 
 .text {
@@ -268,9 +269,23 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 .picture__image {
+  display: block;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
   height: 457px;
-  width: 457px;
+  width: auto;
+}
+.picture__image::before {
+  border: 20px solid #E8C300;
+  border-radius: 4px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  content: "";
+  top: 50%;
+  height: 250px;
+  position: absolute;
+  transform: translateY(-50%);
+  transition-duration: 0.8s;
+  width: 250px;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
