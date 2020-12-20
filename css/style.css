@@ -283,13 +283,18 @@ h1, h2, h3, h4, h5, h6 {
 .picture--right {
   text-align: left;
 }
-.picture__img {
-  display: block;
+.picture--right::before {
   position: absolute;
+  display: block;
+  content: "";
+  border: 20px solid #E8C300;
+  height: 250px;
+  top: 50%;
+  right: 0;
+  width: 250px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
   z-index: 1;
-  top: 0%;
-  left: 125%;
-  transform: translate(-125%, 0);
+  transform: translateY(-50%);
 }
 
 /*# sourceMappingURL=style.css.map */

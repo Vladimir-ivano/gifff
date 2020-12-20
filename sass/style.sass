@@ -205,18 +205,24 @@ $ff1:'Open Sans', sans-serif
   position: relative
   &__image
     border-radius: 4px
-    box-shadow: 0 0  35px rgba(0,0,0,0.5)
+    box-shadow: 0 0 35px rgba(0,0,0,0.5)
     height: 457px
     width: auto
   &--right
     text-align: left
-  &__img
-    display: block
-    position: absolute
-    z-index: 1
-    top: 0%
-    left: 125%
-    transform: translate( -125% ,0)
+    &::before
+      position: absolute
+      display: block
+      content: ''
+      border: 20px solid #E8C300
+      height: 250px
+      top: 50%
+      right: 0
+      width: 250px
+      box-shadow: 0 0 35px rgba(0,0,0,0.5)
+      z-index: 1
+      transform: translateY(-50%)
+
 
 
     
