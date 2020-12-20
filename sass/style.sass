@@ -158,14 +158,6 @@ $ff1:'Open Sans', sans-serif
     i
       margin: auto
 /*section==========*/
-.article__inner
-  display: flex
-  
-.article__content:first-child
-  align-self: center
-  text-align: center
-  margin-right: 100px
-  flex-basis: calc( 100% - 680px  )
 .title
   text-align: center
   line-height: 48px
@@ -195,16 +187,39 @@ $ff1:'Open Sans', sans-serif
   font-family: $ff1
   font-size: 14px
   line-height: 24px
-.picture
+
+.article
+  display: block
+  &--about
+    background: #c4aaaa
+  &__inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__content
+    flex-basis: calc(100% - 680px)
+    text-align: center
+.picturу
   display: block
   flex-basis: 600px
-  &__image
-    height: 457px
-    width: auto
-    box-shadow: 0 0 30px rgba(0,0,0,0.5)
+  position: relative
+.picturу__image
+  height: 457px
+  width: auto
 
-/*section--two==========*/
-
+  &--right
+    text-align: left
+    &::before
+      right: 0
+      border: 20px solid #E8C300
+      content: ''
+      display: block
+      height: 250px
+      width: 250px
+      z-index: 1
+      top: 50%
+      transform: translateX(-50%)
+      position: absolute
 
 
     
