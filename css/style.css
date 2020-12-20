@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&family=Open+Sans:wght@400;700&display=swap");
 * {
   padding: 0;
@@ -266,34 +265,31 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 .article__content {
-  flex-basis: calc(100% - 680px);
+  flex-basis: calc( 100% - 680px  );
   text-align: center;
 }
 
-.picturу {
+.picture {
   display: block;
   flex-basis: 600px;
   position: relative;
 }
-
-.picturу__image {
+.picture__image {
+  border-radius: 4px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
   height: 457px;
   width: auto;
 }
-.picturу__image--right {
+.picture--right {
   text-align: left;
 }
-.picturу__image--right::before {
-  right: 0;
-  border: 20px solid #E8C300;
-  content: "";
+.picture__img {
   display: block;
-  height: 250px;
-  width: 250px;
-  z-index: 1;
-  top: 50%;
-  transform: translateX(-50%);
   position: absolute;
+  z-index: 1;
+  top: 0%;
+  left: 74%;
+  transform: translate(-74%, 0);
 }
 
 /*# sourceMappingURL=style.css.map */

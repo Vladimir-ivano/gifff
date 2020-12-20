@@ -197,29 +197,26 @@ $ff1:'Open Sans', sans-serif
     justify-content: space-between
     align-items: center
   &__content
-    flex-basis: calc(100% - 680px)
+    flex-basis: calc( 100% - 680px  )
     text-align: center
-.picturу
+.picture
   display: block
   flex-basis: 600px
   position: relative
-.picturу__image
-  height: 457px
-  width: auto
-
+  &__image
+    border-radius: 4px
+    box-shadow: 0 0  35px rgba(0,0,0,0.5)
+    height: 457px
+    width: auto
   &--right
     text-align: left
-    &::before
-      right: 0
-      border: 20px solid #E8C300
-      content: ''
-      display: block
-      height: 250px
-      width: 250px
-      z-index: 1
-      top: 50%
-      transform: translateX(-50%)
-      position: absolute
+  &__img
+    display: block
+    position: absolute
+    z-index: 1
+    top: 0%
+    left: 74%
+    transform: translate( -74% ,0)
 
 
     
