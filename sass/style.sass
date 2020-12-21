@@ -264,6 +264,8 @@ $ff1:'Open Sans', sans-serif
     transform: translateY(-50%)
 /*section---three==========*/
 .form
+  display: flex
+  flex-wrap: wrap
   &__row
     justify-content: center
     width: 276.8px
@@ -280,6 +282,11 @@ $ff1:'Open Sans', sans-serif
       font-weight: 400
       padding: 15px
       color: #000
+      &::placeholder
+        color: rgba(51, 51, 51, 0.5)
+      &:focus
+        outline: 0
+
   &__btn
     flex-basis: 563.58px
     height: 60px
@@ -290,6 +297,11 @@ $ff1:'Open Sans', sans-serif
     font-weight: 700
     font-family: $ff1
     transition: 0.2s linear
+    &:focus
+      outline: 0
+      
+    &:hover
+      background-color: #caaa08
 
 
 
