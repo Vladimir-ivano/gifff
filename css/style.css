@@ -256,15 +256,13 @@ h1, h2, h3, h4, h5, h6 {
 .article {
   display: block;
 }
-.article--about {
-  background: #c4aaaa;
-}
 .article__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .article__content {
+  color: #000;
   flex-basis: calc( 100% - 680px  );
   text-align: center;
 }
@@ -298,16 +296,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*section---two========== */
+.article--content {
+  color: #fff;
+}
 .article--ourteam {
   background: url(../photo/specialtys-bg.jpg);
   background-size: cover;
 }
 .article__inner {
   display: flex;
-  color: #fff;
   flex-wrap: wrap;
 }
 .article__sub {
+  color: #fff;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   line-height: 1.4;
@@ -339,6 +340,35 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-50%);
 }
 
-/*section---threeq========== */
+/*section---three========== */
+.form__row {
+  justify-content: center;
+  width: 276.8px;
+  margin-right: 10px;
+  text-align: left;
+}
+.form__row__input {
+  width: 276.8px;
+  height: 60px;
+  background-color: #E5E5E5;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  padding: 15px;
+  color: #000;
+}
+.form__btn {
+  flex-basis: 563.58px;
+  height: 60px;
+  text-align: center;
+  border-radius: 5px;
+  background: #E8C300;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  transition: 0.2s linear;
+}
 
 /*# sourceMappingURL=style.css.map */
