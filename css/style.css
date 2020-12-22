@@ -410,8 +410,15 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
 }
 .article__btn {
-  flex-basis: 100%;
-  flex-wrap: wrap;
+  margin-top: 45px;
+  display: flex;
+}
+.article__btn__slider {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
