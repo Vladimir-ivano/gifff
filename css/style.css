@@ -409,11 +409,14 @@ h1, h2, h3, h4, h5, h6 {
   background: url(../photo/bd2cc411643a2822521d6e716aa42a6c.jpg) center;
   background-size: cover;
 }
-.article__btn {
+
+.article__btm {
   margin-top: 45px;
   display: flex;
+  justify-content: center;
 }
-.article__btn__slider {
+.article__btm__slider {
+  margin-right: 20px;
   width: 10px;
   height: 10px;
   border-radius: 50%;
