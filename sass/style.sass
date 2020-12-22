@@ -320,15 +320,24 @@ $ff1:'Open Sans', sans-serif
     background-size: cover
 .article__btm
   margin-top: 45px
-  display: flex
-  justify-content: center
+  text-align: center
+  flex-basis: 100%
   &__slider
     margin-right: 20px
     width: 10px
     height: 10px
     border-radius: 50%
-    color:  rgba(255, 255, 255, 0.5)
+    background-color: rgba(255, 255, 255, 0.5)
     cursor: pointer
+    transition: 0.2s linear
+    &:focus
+      outline: 0
+    &::hover
+      background-color: rgba(255, 255, 255, 0.1qqqqqqqqqq)
+    &--action
+      background-color: #fff
+
+      
 
 
   

@@ -412,16 +412,26 @@ h1, h2, h3, h4, h5, h6 {
 
 .article__btm {
   margin-top: 45px;
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  flex-basis: 100%;
 }
 .article__btm__slider {
   margin-right: 20px;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   cursor: pointer;
+  transition: 0.2s linear;
+}
+.article__btm__slider:focus {
+  outline: 0;
+}
+.article__btm__slider::hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.article__btm__slider--action {
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
