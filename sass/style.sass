@@ -301,6 +301,7 @@ $ff1:'Open Sans', sans-serif
     &:focus
       outline: 0
     &:hover
+      color: #000
       background-color: #caaa08
 .article__texts
   flex-basis: 100%
@@ -311,6 +312,9 @@ $ff1:'Open Sans', sans-serif
   line-height: 12px
   color: rgba(51, 51, 51, 0.5)
   margin-top: 40px
+  transition: .3s linear
+  &:hover
+    color: rgba(51, 51, 51, 0.9)
 .article__texti
   font-weight: 700
 /*section---slider==========*/
@@ -332,8 +336,8 @@ $ff1:'Open Sans', sans-serif
     transition: 0.2s linear
     &:focus
       outline: 0
-    &::hover
-      background-color: rgba(255, 255, 255, 0.1qqqqqqqqqq)
+    &:hover
+      background-color: #fff
     &--action
       background-color: #fff
 
