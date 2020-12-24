@@ -320,8 +320,20 @@ $ff1:'Open Sans', sans-serif
 /*section---slider==========*/
 .article
   &--slider
+    position: relative
     background: url(../photo/bd2cc411643a2822521d6e716aa42a6c.jpg) center
     background-size: cover
+    &:after
+      position: absolute
+      content: ''
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      background: rgba(0,0 ,0 ,0.5 )
+      z-index: 2
+
+      
 .article__btm
   margin-top: 45px
   text-align: center
