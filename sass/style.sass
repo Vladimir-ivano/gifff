@@ -381,11 +381,15 @@ $ff1:'Open Sans', sans-serif
     &:focus
       outline: 0
 .menu
+  display: inline-block
   margin-top: 51px
-  columns: 363px auto
+  columns: 360px auto
   &__item
+    margin-right: 70px
     font-family: $ff1
     height: 66px
+    &:last-child
+      margin-right: 0
   &__title
     font-size: 18px
     line-height: 18px
