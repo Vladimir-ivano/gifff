@@ -208,8 +208,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
 }
 .social__item:hover {
+  transition: 0.5s linear;
+  border: #F4CA16;
   background-color: #F4CA16;
-  transition: 0.2s liner;
 }
 .social__link {
   display: flex;
@@ -510,7 +511,14 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(51, 51, 51, 0.4);
 }
 
-/*section---menu========== */
+/*section---PRIVATE EVENTS========== */
+.article--text {
+  color: rgba(225, 225, 225, 0.5);
+}
+.article--text:hover {
+  transition: 0.2s linear;
+  color: #fff;
+}
 .article--privat {
   position: relative;
   background: url(../photo/70e7260a49c4e24f3470ef4e57de2623.jpg) center;
@@ -525,6 +533,30 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 2;
+}
+
+.picture {
+  position: relative;
+}
+.picture__text {
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: #000000;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  width: 457px;
+  padding: 28px;
+  line-height: 12px;
+  transform: rotate(-90deg);
+  position: absolute;
+  z-index: 1;
+}
+.picture .text--left {
+  text-align: left;
+  position: absolute;
+  right: -20%;
+  transform: rotate(-270deg);
 }
 
 /*# sourceMappingURL=style.css.map */

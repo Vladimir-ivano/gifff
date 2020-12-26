@@ -138,6 +138,7 @@ $ff1:'Open Sans', sans-serif
     font-size: 12px
     line-height: 1.6
     &:hover
+
       color: #F4CA16
       transition: 0.2s liner
       z-index: 1
@@ -152,8 +153,9 @@ $ff1:'Open Sans', sans-serif
     border: 1px solid #fff
     margin-bottom: 20px
     &:hover
+      transition: 0.5s linear
+      border: #F4CA16
       background-color: #F4CA16
-      transition: 0.2s liner
   &__link
     display: flex
     height: 100%
@@ -399,8 +401,13 @@ $ff1:'Open Sans', sans-serif
     line-height: 12px
     font-weight: 400
     color: rgba(51, 51, 51, 0.4)
-/*section---menu==========*/
+/*section---PRIVATE EVENTS==========*/
 .article
+  &--text
+    color: rgba(225,225,225 ,0.5 )
+    &:hover
+      transition: 0.2s linear
+      color: #fff
   &--privat
     position: relative
     background: url(../photo/70e7260a49c4e24f3470ef4e57de2623.jpg) center
@@ -414,6 +421,40 @@ $ff1:'Open Sans', sans-serif
       right: 0
       background: rgba(0,0 ,0 ,0.5 )
       z-index: 2
+.picture
+  position: relative
+  &__inner
+    
+  &__text
+    border-radius: 5px
+    text-transform: uppercase
+    background-color: #000000
+    color: #fff
+    font-family: $ff1
+    font-size: 24px
+    width: 457px
+    padding: 28px 
+    line-height: 12px
+    transform: rotate(-90deg)
+    position: absolute
+    z-index: 1
+  .text--left
+    text-align: left
+    position: absolute
+    right: -20%
+    transform: rotate(-270deg)
+
+
+    
+    
+    
+
+    
+  
+
+
+
+  
 
 
 
