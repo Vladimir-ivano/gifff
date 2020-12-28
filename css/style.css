@@ -557,6 +557,9 @@ h1, h2, h3, h4, h5, h6 {
   transform: rotate(-90deg);
   transform-origin: left top;
 }
+.picture--rights::after:hover {
+  color: #000;
+}
 .picture--lefts::after {
   display: block;
   content: "weddings ";
