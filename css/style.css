@@ -556,10 +556,6 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 5;
   transform: rotate(-90deg);
   transform-origin: left top;
-  transform: 0.3s linear;
-}
-.picture--rights::after:hover {
-  background-color: #ccc;
 }
 .picture--lefts::after {
   display: block;
