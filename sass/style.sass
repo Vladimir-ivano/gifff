@@ -242,6 +242,7 @@ $ff1:'Open Sans', sans-serif
     display: flex
     flex-wrap: wrap
   &__sub
+    letter-spacing: 8px
     color: #fff
     font-family: $ff1
     font-weight: 700
@@ -386,12 +387,13 @@ $ff1:'Open Sans', sans-serif
   display: inline-block
   margin-top: 51px
   columns: 360px auto
+  margin-right: 81px
+  &:last-child
+      margin-right: 0
   &__item
-    margin-right: 70px
     font-family: $ff1
     height: 66px
-    &:last-child
-      margin-right: 0
+    
   &__title
     font-size: 18px
     line-height: 18px
@@ -423,26 +425,46 @@ $ff1:'Open Sans', sans-serif
       z-index: 2
 .picture
   position: relative
-  &__inner
-    
-  &__text
+  &--right::after
+    display: block
+    content: 'corporate pzrties '
     border-radius: 5px
     text-transform: uppercase
     background-color: #000000
     color: #fff
     font-family: $ff1
     font-size: 24px
-    width: 457px
+    width: calc(600px - 120px)
     padding: 28px 
     line-height: 12px
+    position: absolute
+    z-index: 5
     transform: rotate(-90deg)
-    position: absolute
-    z-index: 1
-  .text--left
+    transform-origin: left top
+  &--left::after
+    display: block
+    content: 'weddings '
+    border-radius: 5px
+    text-transform: uppercase
+    background-color: #000000
+    color: #fff
+    font-family: $ff1
+    font-size: 24px
+    width: calc(600px - 120px)
+    padding: 28px
     text-align: left
+    line-height: 12px
     position: absolute
-    right: -20%
+    z-index: 5
+    right: 67px
+    bottom: 0
     transform: rotate(-270deg)
+    transform-origin: right bottom
+
+
+
+
+
 
 
     

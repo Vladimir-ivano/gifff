@@ -314,6 +314,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
 }
 .article__sub {
+  letter-spacing: 8px;
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
@@ -490,14 +491,14 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   margin-top: 51px;
   columns: 360px auto;
+  margin-right: 81px;
+}
+.menu:last-child {
+  margin-right: 0;
 }
 .menu__item {
-  margin-right: 70px;
   font-family: "Open Sans", sans-serif;
   height: 66px;
-}
-.menu__item:last-child {
-  margin-right: 0;
 }
 .menu__title {
   font-size: 18px;
@@ -538,25 +539,42 @@ h1, h2, h3, h4, h5, h6 {
 .picture {
   position: relative;
 }
-.picture__text {
+.picture--right::after {
+  display: block;
+  content: "corporate pzrties ";
   border-radius: 5px;
   text-transform: uppercase;
   background-color: #000000;
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
-  width: 457px;
+  width: calc(600px - 120px);
   padding: 28px;
   line-height: 12px;
+  position: absolute;
+  z-index: 5;
   transform: rotate(-90deg);
-  position: absolute;
-  z-index: 1;
+  transform-origin: left top;
 }
-.picture .text--left {
+.picture--left::after {
+  display: block;
+  content: "weddings ";
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: #000000;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  width: calc(600px - 120px);
+  padding: 28px;
   text-align: left;
+  line-height: 12px;
   position: absolute;
-  right: -20%;
+  z-index: 5;
+  right: 67px;
+  bottom: 0;
   transform: rotate(-270deg);
+  transform-origin: right bottom;
 }
 
 /*# sourceMappingURL=style.css.map */
