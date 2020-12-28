@@ -426,7 +426,8 @@ $ff1:'Open Sans', sans-serif
 .picture
 
   position: relative
-
+  &__image:hover
+    background: rgba(0,0 ,0 ,0.5 )
   &--rights::after
     display: block
     content: 'corporate pzrties '
@@ -441,11 +442,13 @@ $ff1:'Open Sans', sans-serif
     text-align: left
     line-height: 12px
     position: absolute
-    z-index: 1
+    z-index: 5
     transform: rotate(-90deg)
     transform-origin: left top
-    &:hover
-      color: #caaa08
+  &:hover::after
+    transition: 0.2s linear
+    color: #E8C300
+    background: rgba(0,0 ,0 ,0.1 )
   &--lefts::after
     display: block
     content: 'weddings '

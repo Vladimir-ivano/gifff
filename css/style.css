@@ -539,6 +539,9 @@ h1, h2, h3, h4, h5, h6 {
 .picture {
   position: relative;
 }
+.picture__image:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
 .picture--rights::after {
   display: block;
   content: "corporate pzrties ";
@@ -553,12 +556,14 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left;
   line-height: 12px;
   position: absolute;
-  z-index: 1;
+  z-index: 5;
   transform: rotate(-90deg);
   transform-origin: left top;
 }
-.picture--rights::after:hover {
-  color: #caaa08;
+.picture:hover::after {
+  transition: 0.2s linear;
+  color: #E8C300;
+  background: rgba(0, 0, 0, 0.1);
 }
 .picture--lefts::after {
   display: block;
