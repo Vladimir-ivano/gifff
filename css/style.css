@@ -539,7 +539,7 @@ h1, h2, h3, h4, h5, h6 {
 .picture {
   position: relative;
 }
-.picture--right::after {
+.picture--rights::after {
   display: block;
   content: "corporate pzrties ";
   border-radius: 5px;
@@ -550,13 +550,18 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   width: calc(600px - 120px);
   padding: 28px;
+  text-align: left;
   line-height: 12px;
   position: absolute;
   z-index: 5;
   transform: rotate(-90deg);
   transform-origin: left top;
+  transform: 0.3s linear;
 }
-.picture--left::after {
+.picture--rights::after:hover {
+  background-color: #ccc;
+}
+.picture--lefts::after {
   display: block;
   content: "weddings ";
   border-radius: 5px;
@@ -571,7 +576,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 12px;
   position: absolute;
   z-index: 5;
-  right: 67px;
+  right: 68px;
   bottom: 0;
   transform: rotate(-270deg);
   transform-origin: right bottom;
