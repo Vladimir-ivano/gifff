@@ -591,18 +591,10 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-wrap: wrap;
 }
-.section__picture__item {
+
+.image {
   flex-basis: calc( 100% /4  );
-  position: relative;
   height: 360px;
-  overflow: hidden;
-}
-.section__picture__item__img {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
