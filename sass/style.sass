@@ -164,6 +164,26 @@ $ff1:'Open Sans', sans-serif
     font-size: 20px
     i
       margin: auto
+
+  /*social==========*/  
+.social
+  &__item
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    border: 1px solid #fff
+    margin-bottom: 20px
+    &:hover
+      transition: 0.5s linear
+      border: #F4CA16
+      background-color: #F4CA16
+  &__link
+    display: flex
+    height: 100%
+    color: #fff
+    font-size: 20px
+    i
+      margin: auto
 /*section==========*/
 .title
   text-align: center
@@ -238,12 +258,8 @@ $ff1:'Open Sans', sans-serif
       animation: rotate 0.3s infiniti linear
     &:hover::before
       right: 40%
+      transform: rotate(90deg)
       
-      @keyframes yellow-square
-        0%
-          transform: rotate(0)
-        100%
-          transform: rotate(270deg)
           
       
 
