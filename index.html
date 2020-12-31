@@ -10,18 +10,12 @@
 
 <body>
 
-  <svg style="display: none;">
-    <symbol id="facebook" viewBox="0 0 24 24">
-      <path
-        d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z" />
-    </symbol>
-  </svg>
 
   <header class="header">
     <div class="container container--top header__container">
       <nav class="nav header__nav">
 
-        <img class="nav__decor" src="./photo/Decor.png" alt="Декоративное изображение" aria-hidden="true">
+        
 
         <ul class="nav__list nav__list--left">
           <li class="nav__item"><a href="#home" class="nav__link">home</a></li>
@@ -30,6 +24,7 @@
           <li class="nav__item"><a href="#booking" class="nav__link">booking</a></li>
         </ul>
 
+        <img class="nav__decor" src="./photo/Decor.png" alt="Декоративное изображение" aria-hidden="true">
 
         <ul class="nav__list nav__list--right">
           <li class="nav__item"><a href="#menu" class="nav__link">menu</a></li>
@@ -68,7 +63,7 @@
 
       </div>
 
-      <a class="header__down-btn" href="https://печатьпро.рф/wp-content/uploads/2019/10/Proektirovanie-kafe.jpg"><img
+      <a class="header__down-btn" href=""><img
           src="./photo/.png" alt=""></a>
 
     </div>
@@ -202,7 +197,7 @@
       </article>
 
       <div class="button">
-        <button class="button__item">SOUPE</button>
+        <button class="button__item ">SOUPE</button>
         <button class="button__item">PIZZA</button>
         <button class="button__item">PASTA</button>
         <button class="button__item">DESERT</button>
@@ -361,11 +356,13 @@
 
     <div class="section__picture">
 
-      <svg class="image" role="image" aria-label="Картинка" preserveAspectRatio="xMidYMid slice" viewBox="0 0 1448 1086">
+      <svg class="image" role="image" aria-label="Картинка" preserveAspectRatio="xMidYMid slice"
+        viewBox="0 0 1448 1086">
         <image width="100%" height="100%" xlink:href="./photo/1.jpg"></image>
       </svg>
 
-      <svg class="image" role="image" aria-label="Картинка" preserveAspectRatio="xMidYMid slice" viewBox="0 0 4000 2667">
+      <svg class="image" role="image" aria-label="Картинка" preserveAspectRatio="xMidYMid slice"
+        viewBox="0 0 4000 2667">
         <image width="100%" height="100%" xlink:href="./photo/2.jpg"></image>
       </svg>
 
@@ -382,45 +379,73 @@
   <!--section --form-->
   <section class="article article--contact">
     <div class="container ">
-
       <article class="article__content article--contents">
         <h2 class="title article__title">CONTACT</h2>
         <strong class="subtitle article__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
           velit maximus, molestie est a, tempor magna.</strong>
-      </article>
-      
+      </article><!-- / article -->
+
       <div class="form__contact">
+
         <div class="form__contact__data">
           <input type="name" placeholder=" Name" class="form__row__input form__contact--data">
           <input type="phone" placeholder="Phohe" class="form__row__input form__contact--data">
           <input type="Email" placeholder="Email" class="form__row__input form__contact--data">
         </div>
+        <textarea required class="form__row__input form__contact--msg" placeholder="Message" form="" name="Message"
+          id="" cols="30" rows="10"></textarea>
 
-        <input type="Message" placeholder="Message" class="form__row__input form__contact--data">
+
+
         <div class="form__contact__info">
-    
-          <ul class="form__contact__info__item">
-            <i class="fas fa-map-marker-alt"></i>
-            <a class="form__contact__info__item__adress" href=" 5th London Boulevard, U.K. ">5th London Boulevard, U.K. </a>
-            </ul>
 
-            <ul class="form__contact__info__item">
-              <li><i class="fas fa-phone"></i></li>
-              <a class="form__contact__info__item__number" href="  +40 729 131 637/+40 726 458 782">+40 729 131
-                637/+40 726 458 782</a></ul>
+          <ul class="form__contact__info__list">
 
-            <ul class="form__contact__info__item">
-              <li><i class="fas fa-envelope"></i></li>
-              <a class="form__contact__info__item__email"
-                href=" office@mindblister.com729">office@mindblister.com729</a>
-            </ul>
-          </div>
-              <button type="submit" class="form__btn">SEND MESSAGE </button>
+            <li class="form__contact__info__item">
+              <i class="fas fa-map-marker-alt"></i>
+              <a class="form__contact__info__item__link" href=" 5th London Boulevard, U.K. ">5th London Boulevard, U.K.
+              </a>
+            </li>
+
+            <li class="form__contact__info__item">
+              <i class="fas fa-phone"></i>
+              <a class="form__contact__info__item__link" href=" +40 729 131 637/+40 726 458 782 ">+40 729 131 637/+40
+                726 458 782 </a>
+            </li>
+
+            <li class="form__contact__info__item">
+              <i class="fas fa-envelope"></i>
+              <a class="form__contact__info__item__link"
+                href=" office@mindblister.com729 ">office@mindblister.com729</a>
+            </li>
+
+          </ul>
+
+          <button type="submit" class="form__contact__info__list  form__btn">SEND MESSAGE </button>
+
         </div>
-      </div>
+
+
+      </div><!-- / form__contact -->
+
+    </div><!-- / container -->
+  </section> <!-- / section -->
+
+  <!--section --map-->
+
+  <section class="article article--map">
+    <div>
 
     </div>
   </section>
+  <!--footer-->
+  <footer class="footer">
+    <div class="conainer container--same">
+      <p class="footer__text">© Copyright <span class="footer__title" >Mindblister</span> 2019</p>
+    </div>
+
+  </footer>
+
 </body>
 <script src="https://kit.fontawesome.com/550bccb057.js" crossorigin="anonymous"></script>
 
