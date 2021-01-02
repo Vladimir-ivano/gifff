@@ -50,8 +50,6 @@ $ff1:'Open Sans', sans-serif
     transform: rotate(-90deg)translate(-50%,50%)
   &__box
     text-align: center
-    border-right: 2px solid rgba(255,255,255 ,0.5)
-    border-left: 2px solid rgba(255,255,255 ,0.5)
   &__subtitle
     font-size: 12px
     letter-spacing: 0.5em 
@@ -218,6 +216,8 @@ $ff1:'Open Sans', sans-serif
   font-size: 14px
   line-height: 24px
 
+
+
 .article
   display: block
   &--about
@@ -241,8 +241,6 @@ $ff1:'Open Sans', sans-serif
   &--right
     text-align: left
     &::before
-      
-    &::before
       position: absolute
       display: block
       content: ''
@@ -258,11 +256,9 @@ $ff1:'Open Sans', sans-serif
       animation: rotate 0.3s infiniti linear
     &:hover::before
       right: 40%
-      transform: rotate(90deg)
+      transform: translateY(-40%) rotate(360deg)
       
-          
-      
-
+  
 
 /*section---two==========*/
 .article
@@ -302,6 +298,8 @@ $ff1:'Open Sans', sans-serif
     box-shadow: 0 0 35px rgba(0,0,0,0.5)
     z-index: 1
     transform: translateY(-50%)
+  
+      
 /*section---three==========*/
 .form
   display: flex
