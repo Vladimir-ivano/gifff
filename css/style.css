@@ -326,8 +326,8 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
 }
 .article__picture:hover::before {
-  right: 41%;
-  transform: translateY(-41%) rotate(315deg);
+  right: 25%;
+  transform: translate(-25%) rotate(315deg);
 }
 .article__image {
   border-radius: 5px;
@@ -564,6 +564,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 0;
 }
 
+.article__picture:hover {
+  background-color: #E8C300;
+}
 .article__picture::after {
   background-color: #000;
   border-top-left-radius: 4px;
@@ -578,9 +581,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 27px 30px;
   text-transform: uppercase;
   width: calc(100% - 125px);
-}
-.article__picture::after:hover {
-  background-color: #E8C300;
 }
 .article__picture--left::after {
   right: 80px;

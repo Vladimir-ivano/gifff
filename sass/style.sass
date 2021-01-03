@@ -254,8 +254,8 @@ $ff1:'Open Sans', sans-serif
       &:before
         right: 0
     &:hover::before
-      right: 41%
-      transform: translateY(-41%) rotate(315deg)
+      right: 25%
+      transform: translate( -25%) rotate(315deg)
     
   &__image
     border-radius: 5px
@@ -455,6 +455,9 @@ $ff1:'Open Sans', sans-serif
   &__picture--right
     margin-left: 0
 .article
+  &__picture:hover
+      background-color: #E8C300
+    
   &__picture::after
     background-color: #000
     border-top-left-radius: 4px
@@ -469,8 +472,7 @@ $ff1:'Open Sans', sans-serif
     padding: 27px 30px
     text-transform: uppercase
     width: calc(100% - 125px)
-    &:hover
-      background-color: #E8C300
+    
   &__picture--left::after
     right: 80px
     transform-origin: right bottom
