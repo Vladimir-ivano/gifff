@@ -450,10 +450,45 @@ $ff1:'Open Sans', sans-serif
   &__content
     display: flex
     justify-content: space-between
-  &__pucture--left
+  &__picture--left
     margin-right: 0
-  &__pucture--right
+  &__picture--right
     margin-left: 0
+.article
+  &__picture::after
+    background-color: #000
+    border-top-left-radius: 4px
+    border-top-right-radius: 4px
+    color: #fff
+    align-self: center
+    bottom: 4px
+    align-items: center
+    position: absolute
+    font-size: 24px
+     
+    letter-spacing: 0.0625em
+    padding: 27px 30px
+    text-transform: uppercase
+    width: calc(100% - 125px)
+    &:hover
+      background-color: #E8C300
+  &__picture--left::after
+    right: 80px
+    transform-origin: right bottom
+    transform: rotate(90deg)
+  
+  &__picture--text::after
+    content: attr(data-info)
+  &__picture--right::after
+    right: 45px
+    transform-origin: left bottom
+    transform: rotate(-90deg)
+  &--tex
+    color: rgba(255,255,255,0.5)
+    &:hover
+      color: #fff
+
+
 
 
   
