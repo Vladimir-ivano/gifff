@@ -325,8 +325,9 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
 }
 .article__picture:hover::before {
-  right: 35%;
-  transform: translateY(-50%) rotate(315deg);
+  right: 20.4%;
+  width: 485px;
+  height: 485px;
 }
 .article__image {
   border-radius: 5px;
@@ -368,8 +369,9 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
 }
 .article__picture--left:hover::before {
-  left: 35%;
-  transform: translateY(-50%) rotate(315deg);
+  left: 20.4%;
+  width: 485px;
+  height: 485px;
 }
 
 /*section---three========== */
