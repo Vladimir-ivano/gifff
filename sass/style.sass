@@ -158,7 +158,6 @@ $ff1:'Open Sans', sans-serif
     display: flex
     height: 100%
     color: #fff
-    font-size: 20px
     i
       margin: auto
 
@@ -255,7 +254,7 @@ $ff1:'Open Sans', sans-serif
         right: 0
     &:hover::before
       right: 25%
-      transform: translate( -25%) rotate(315deg)
+      transform: translateY( -25%) rotate(315deg)
     
   &__image
     border-radius: 5px
@@ -455,14 +454,16 @@ $ff1:'Open Sans', sans-serif
   &__picture--right
     margin-left: 0
 .article
-  &__picture:hover
-      background-color: #E8C300
-    
+  &__picture:hover:after
+    background-color: #E8C300
+    color: #000
   &__picture::after
     background-color: #000
     border-top-left-radius: 4px
     border-top-right-radius: 4px
     color: #fff
+    font-family: $ff1
+    font-weight: 700
     align-self: center
     bottom: 4px
     align-items: center
