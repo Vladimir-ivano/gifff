@@ -166,6 +166,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 0 25px;
   align-items: flex-start;
   flex-basis: 100%;
+  /*social========== */
 }
 .nav__list {
   justify-content: space-between;
@@ -200,29 +201,25 @@ h1, h2, h3, h4, h5, h6 {
 .nav__decor {
   margin: 0 auto;
 }
-
-.social {
-  /*social========== */
-}
-.social__item {
+.nav .social__item {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   border: 1px solid #fff;
   margin-bottom: 20px;
 }
-.social__item:hover {
+.nav .social__item:hover {
   transition: 0.5s linear;
   border: #F4CA16;
   background-color: #F4CA16;
 }
-.social__link {
+.nav__link {
   display: flex;
   height: 100%;
   color: #fff;
   font-size: 20px;
 }
-.social__link i {
+.nav__link i {
   margin: auto;
 }
 
@@ -294,7 +291,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .article__inner {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .article__content {
@@ -302,39 +298,41 @@ h1, h2, h3, h4, h5, h6 {
   flex-basis: calc( 100% - 680px  );
   text-align: center;
 }
-
-.picture {
-  display: block;
-  flex-basis: 600px;
+.article__picture {
+  cursor: pointer;
   position: relative;
 }
-.picture__image {
-  border-radius: 4px;
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
-  height: 475px;
-  width: auto;
-}
-.picture--right {
-  text-align: left;
-}
-.picture--right::before {
+.article__picture:before {
   position: absolute;
   display: block;
   content: "";
   border: 20px solid #E8C300;
   height: 250px;
   top: 50%;
-  right: 0;
   width: 250px;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
   z-index: 1;
+  right: 0;
   transform: translateY(-50%);
   transition: all 0.3s ease 0s;
   animation: rotate 0.3s infiniti linear;
 }
-.picture--right:hover::before {
-  right: 40%;
-  transform: translateY(-40%) rotate(360deg);
+.article__picture--right {
+  margin-left: 80px;
+  padding-right: 125px;
+}
+.article__picture--right:before {
+  right: 0;
+}
+.article__picture:hover::before {
+  right: 41%;
+  transform: translateY(-41%) rotate(315deg);
+}
+.article__image {
+  border-radius: 5px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
+  height: 475px;
+  width: auto;
 }
 
 /*section---two========== */
@@ -362,25 +360,16 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   flex-basis: 100%;
 }
-
-.picture {
-  position: relative;
+.article__picture--left {
+  margin-right: 80px;
+  padding-left: 125px;
 }
-.picture--left {
-  text-align: right;
-}
-.picture--left::before {
-  position: absolute;
-  display: block;
-  content: "";
-  border: 20px solid #E8C300;
-  height: 250px;
-  top: 50%;
+.article__picture--left:before {
   left: 0;
-  width: 250px;
-  box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
-  z-index: 1;
-  transform: translateY(-50%);
+}
+.article__picture--left:hover::before {
+  left: 41%;
+  transform: translateY(-41%) rotate(315deg);
 }
 
 /*section---three========== */
@@ -558,82 +547,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*section---PRIVATE EVENTS========== */
-.article--text {
-  color: rgba(225, 225, 225, 0.5);
-}
-.article--text:hover {
-  transition: 0.2s linear;
-  color: #fff;
-}
 .article--privat {
   position: relative;
   background: url(../photo/70e7260a49c4e24f3470ef4e57de2623.jpg) center;
   background-size: cover;
 }
-.article--privat:after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 2;
+.article .events__picture--left {
+  margin-right: 0;
 }
-
-.picture {
-  position: relative;
-}
-.picture__image:hover {
-  background: rgba(0, 0, 0, 0.5);
-}
-.picture--rights::after {
-  display: block;
-  content: "corporate pzrties ";
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  text-transform: uppercase;
-  background-color: #000000;
-  color: #fff;
-  font-weight: 700;
-  font-family: "Open Sans", sans-serif;
-  font-size: 24px;
-  width: calc(100% - 125px);
-  padding: 28px;
-  text-align: left;
-  line-height: 12px;
-  position: absolute;
-  bottom: -64px;
-  z-index: 5;
-  transform: rotate(-90deg);
-  transform-origin: left top;
-  transition: 0.4s linear;
-}
-.picture:hover::after {
-  color: #000;
-  background: #E8C300;
-}
-.picture--lefts::after {
-  display: block;
-  content: "weddings ";
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  font-weight: 700;
-  text-transform: uppercase;
-  background-color: #000000;
-  color: #fff;
-  font-family: "Open Sans", sans-serif;
-  font-size: 24px;
-  width: calc(100% - 125px);
-  padding: 28px;
-  text-align: left;
-  line-height: 12px;
-  position: absolute;
-  z-index: 1;
-  right: 68px;
-  bottom: 4px;
-  transform: rotate(-270deg);
-  transform-origin: right bottom;
+.article .events__picture--right {
+  margin-left: 0;
 }
 
 /*section---picture========== */

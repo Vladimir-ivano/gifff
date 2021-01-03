@@ -15,7 +15,7 @@
     <div class="container container--top header__container">
       <nav class="nav header__nav">
 
-        
+
 
         <ul class="nav__list nav__list--left">
           <li class="nav__item"><a href="#home" class="nav__link">home</a></li>
@@ -63,8 +63,7 @@
 
       </div>
 
-      <a class="header__down-btn" href=""><img
-          src="./photo/.png" alt=""></a>
+      <a class="header__down-btn" href=""><img src="./photo/.png" alt=""></a>
 
     </div>
     <!----/container-->
@@ -83,9 +82,9 @@
           ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam
           nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
       </article>
-      <picture class="article__content picture picture--right">
+      <picture class="article__picture  article__picture--right">
         <source srcset="./photo/about.jpg" type="image/webp">
-        <img class="picture__image" src="./photo/about.jpg" alt="">
+        <img class="article__image" src="./photo/about.jpg" alt="">
       </picture>
     </div>
   </section>
@@ -96,9 +95,9 @@
 
       <span class="title__content article__sub">our team </span>
 
-      <picture class="article__content picture picture--left">
+      <picture class="article__picture  article__picture--left">
         <source srcset="./photo/team.jpg" type="image/webp">
-        <img class="picture__image" src="./photo/about.jpg" alt="">
+        <img class="article__image" src="./photo/about.jpg" alt="">
       </picture>
 
       <article class="article__content article--content">
@@ -114,7 +113,6 @@
   </section>
 
   <!--section --three-->
-
   <section class="article article--form">
     <div class="container  container--down article__inner">
       <article class="article__content">
@@ -146,9 +144,9 @@
         </div>
       </article>
 
-      <picture class="article__content picture picture--right">
+      <picture class="article__picture  article__picture--right">
         <source srcset="./photo/booking.jpg" type="image/webp">
-        <img class="picture__image" src="./photo/booking.jpg" alt="">
+        <img class="article__image" src="./photo/booking.jpg" alt="">
       </picture>
 
       <p class="article__texts">Mon - Fri:<span class="article__texti"> 8PM - 10PM</span> , Sat - Sun:<span
@@ -165,9 +163,9 @@
 
       <span class="title__content article__sub"> specialties</span>
 
-      <picture class="article__content picture picture--left">
+      <picture class="article__picture  article__picture--left">
         <source srcset="./photo/specialties.jpg" type="image/webp">
-        <img class="picture__image" src="./photo/specialties.jpg" alt="">
+        <img class="article__image" src="./photo/specialties.jpg" alt="">
       </picture>
 
       <article class="article__content article--content">
@@ -330,19 +328,21 @@
 
 
       <span class="title__content article__sub"> PRIVATE EVENTS</span>
+      <div class="events__content">
+        <picture
+          class="article__picture article__picture--left article__picture--text events__picture events__picture--left" data-info="corporate pzrties">
 
-      <picture class="article__content picture picture--lefts picture--left">
+          <source srcset="./photo/event-1.jpg" type="image/webp">
+          <img class="article__image" src="./photo/event-1.jpg" alt="">
+        </picture>
 
-        <source srcset="./photo/event-1.jpg" type="image/webp">
-        <img class="picture__image" src="./photo/event-1.jpg" alt="">
-      </picture>
+        <picture
+          class="article__picture article__picture--right article__picture--text events__picture events__picture--right" data-info="corporate pzrties">
 
-      <picture class="article__content picture picture--rights picture--right">
-
-        <source srcset="./photo/event-2.jpg" type="image/webp">
-        <img class="picture__image" src="./photo/event-2.jpg" alt="">
-      </picture>
-
+          <source srcset="./photo/event-2.jpg" type="image/webp">
+          <img class="article__image" src="./photo/event-2.jpg" alt="">
+        </picture>
+      </div>
       <p class="article__texts article--text">For private events please call:<span
           class="article__texti article--texti"> +40 729 131 637/+40 726 458 782</span> or use the contact form. </p>
 
@@ -443,7 +443,7 @@
   <!--footer-->
   <footer class="footer">
     <div class="conainer container--same">
-      <p class="footer__text">© Copyright <span class="footer__title" >Mindblister</span> 2019</p>
+      <p class="footer__text">© Copyright <span class="footer__title">Mindblister</span> 2019</p>
     </div>
 
   </footer>

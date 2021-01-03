@@ -143,9 +143,8 @@ $ff1:'Open Sans', sans-serif
       z-index: 1
   &__decor
     margin: 0 auto
-.social
 
-  &__item
+  .social__item
     width: 60px
     height: 60px
     border-radius: 50%
@@ -163,7 +162,9 @@ $ff1:'Open Sans', sans-serif
     i
       margin: auto
 
-  /*social==========*/  
+  /*social==========*/ 
+
+
 .social
   &__item
     width: 60px
@@ -223,40 +224,44 @@ $ff1:'Open Sans', sans-serif
   &--about
   &__inner
     display: flex
-    justify-content: space-between
+    
     align-items: center
   &__content
     color: #000
     flex-basis: calc( 100% - 680px  )
     text-align: center
-.picture
-  display: block
-  flex-basis: 600px
-  position: relative
+  &__picture
+    cursor: pointer
+    position: relative
+    &:before
+        position: absolute
+        display: block
+        content: ''
+        border: 20px solid #E8C300
+        height: 250px
+        top: 50%
+        width: 250px
+        box-shadow: 0 0 35px rgba(0,0,0,0.5)
+        z-index: 1
+        right: 0
+        transform: translateY(-50%)
+        transition: all 0.3s ease 0s
+        animation: rotate 0.3s infiniti linear
+    &--right
+      margin-left: 80px
+      padding-right: 125px
+      &:before
+        right: 0
+    &:hover::before
+      right: 41%
+      transform: translateY(-41%) rotate(315deg)
+    
   &__image
-    border-radius: 4px
+    border-radius: 5px
     box-shadow: 0 0 35px rgba(0,0,0,0.5)
     height: 475px
     width: auto
-  &--right
-    text-align: left
-    &::before
-      position: absolute
-      display: block
-      content: ''
-      border: 20px solid #E8C300
-      height: 250px
-      top: 50%
-      right: 0
-      width: 250px
-      box-shadow: 0 0 35px rgba(0,0,0,0.5)
-      z-index: 1
-      transform: translateY(-50%)
-      transition: all 0.3s ease 0s
-      animation: rotate 0.3s infiniti linear
-    &:hover::before
-      right: 40%
-      transform: translateY(-40%) rotate(360deg)
+    
       
   
 
@@ -282,22 +287,16 @@ $ff1:'Open Sans', sans-serif
     text-transform: uppercase
     display: block
     flex-basis: 100%
-.picture
-  position: relative
-  &--left
-    text-align: right
-  &--left::before
-    position: absolute
-    display: block
-    content: ''
-    border: 20px solid #E8C300
-    height: 250px
-    top: 50%
-    left: 0
-    width: 250px
-    box-shadow: 0 0 35px rgba(0,0,0,0.5)
-    z-index: 1
-    transform: translateY(-50%)
+  &__picture--left
+    margin-right: 80px
+    padding-left: 125px
+    &:before
+      left: 0
+    &:hover::before
+      left: 41%
+      transform: translateY(-41%) rotate(315deg)
+
+
   
       
 /*section---three==========*/
@@ -444,75 +443,18 @@ $ff1:'Open Sans', sans-serif
     color: rgba(51, 51, 51, 0.4)
 /*section---PRIVATE EVENTS==========*/
 .article
-  &--text
-    color: rgba(225,225,225 ,0.5 )
-    &:hover
-      transition: 0.2s linear
-      color: #fff
   &--privat
     position: relative
     background: url(../photo/70e7260a49c4e24f3470ef4e57de2623.jpg) center
     background-size: cover
-    &:after
-      position: absolute
-      content: ''
-      top: 0
-      left: 0
-      bottom: 0
-      right: 0
-      background: rgba(0,0 ,0 ,0.5 )
-      z-index: 2
-.picture
+  .events__picture
+    &--left
+      margin-right: 0
+    &--right
+      margin-left: 0
 
-  position: relative
-  &__image:hover
-    background: rgba(0,0 ,0 ,0.5 )
-  &--rights::after
-    display: block
-    content: 'corporate pzrties '
-    border-top-right-radius: 5px
-    border-top-left-radius: 5px
-    text-transform: uppercase
-    background-color: #000000
-    color: #fff
-    font-weight: 700
-    font-family: $ff1
-    font-size: 24px
-    width: calc(100% - 125px)
-    padding: 28px 
-    text-align: left
-    line-height: 12px
-    position: absolute
-    bottom: -64px
-    z-index: 5
-    transform: rotate(-90deg)
-    transform-origin: left top
-    transition: 0.4s linear
-  &:hover::after
-    
-    color: #000
-    background: #E8C300
-  &--lefts::after
-    display: block
-    content: 'weddings '
-    border-top-right-radius: 5px
-    border-top-left-radius: 5px
-    font-weight: 700
-    text-transform: uppercase
-    background-color: #000000
-    color: #fff
-    font-family: $ff1
-    font-size: 24px
-    width: calc(100% - 125px)
-    padding: 28px
-    text-align: left
-    line-height: 12px
-    position: absolute
-    z-index: 1
-    right: 68px
-    bottom: 4px
-    transform: rotate(-270deg)
-    transform-origin: right bottom
+  
+
 /*section---picture==========*/
 .section__picture
   display: flex
