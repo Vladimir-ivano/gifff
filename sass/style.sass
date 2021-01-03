@@ -232,6 +232,7 @@ $ff1:'Open Sans', sans-serif
     text-align: center
   &__picture
     cursor: pointer
+    display: inline-block
     position: relative
     &:before
         position: absolute
@@ -442,16 +443,18 @@ $ff1:'Open Sans', sans-serif
     font-weight: 400
     color: rgba(51, 51, 51, 0.4)
 /*section---PRIVATE EVENTS==========*/
-.article
-  &--privat
-    position: relative
-    background: url(../photo/70e7260a49c4e24f3470ef4e57de2623.jpg) center
-    background-size: cover
-  .events__picture
-    &--left
-      margin-right: 0
-    &--right
-      margin-left: 0
+.events
+  position: relative
+  background: url(../photo/70e7260a49c4e24f3470ef4e57de2623.jpg) center
+  background-size: cover
+  &__content
+    display: flex
+    justify-content: space-between
+  &__pucture--left
+    margin-right: 0
+  &__pucture--right
+    margin-left: 0
+
 
   
 

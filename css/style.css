@@ -300,6 +300,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .article__picture {
   cursor: pointer;
+  display: inline-block;
   position: relative;
 }
 .article__picture:before {
@@ -547,15 +548,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*section---PRIVATE EVENTS========== */
-.article--privat {
+.events {
   position: relative;
   background: url(../photo/70e7260a49c4e24f3470ef4e57de2623.jpg) center;
   background-size: cover;
 }
-.article .events__picture--left {
+.events__content {
+  display: flex;
+  justify-content: space-between;
+}
+.events__pucture--left {
   margin-right: 0;
 }
-.article .events__picture--right {
+.events__pucture--right {
   margin-left: 0;
 }
 
