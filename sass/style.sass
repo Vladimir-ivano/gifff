@@ -35,17 +35,9 @@ $ff1:'Open Sans', sans-serif
     display: block
     position: absolute
     width: 1px
-  &__center--liners:after
-    transform: translateX(-50%)
-    background-color: rgba(250,250,250,0.2)
-    border-radius: 4px
-    content: ''
-    display: block
-    position: absolute
-    width: 1px
-    left: 50%
-    bottom: 0
-    
+ 
+   
+
   &__side--liners::before
     height: 100% 
     left: 15%
@@ -58,7 +50,8 @@ $ff1:'Open Sans', sans-serif
     position: absolute
     width: 1px
   &__side--liners::after
-    height: 100% 
+    
+    height: 89%
     right: 15%
     bottom: 0
     transform: translateX(-50%)
@@ -79,7 +72,6 @@ $ff1:'Open Sans', sans-serif
     top: 220px
   &::after
     bottom: 0
-    height: 10%
     
   
   &__container
@@ -88,8 +80,7 @@ $ff1:'Open Sans', sans-serif
     align-content: space-between
     &::before
       height: calc( 100% - 110px  )
-    &::after
-      height: 42px
+    
       
     
     
