@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 1px;
 }
 .screen__side--liners::after {
-  height: 89%;
+  height: 100%;
   right: 15%;
   bottom: 0;
   transform: translateX(-50%);
@@ -109,11 +109,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
 }
 .header::before {
-  height: calc( 100% - 380px  );
+  height: calc(100% - 115px);
   top: 220px;
-}
-.header::after {
-  bottom: 0;
 }
 .header__container {
   display: flex;
@@ -122,6 +119,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header__container::before {
   height: calc( 100% - 110px  );
+}
+.header__container::after {
+  height: calc(100% - 110px);
 }
 .header__content {
   color: #ffffff;
@@ -132,11 +132,12 @@ h1, h2, h3, h4, h5, h6 {
   flex-basis: 100%;
 }
 .header__operating-box {
-  width: 18px;
+  width: 60px;
 }
 .header__operating-mode {
   display: block;
-  width: 308px;
+  width: 500%;
+  font-size: 12px;
   transform-origin: left;
   transform: rotate(-90deg) translate(-50%, 50%);
 }

@@ -51,7 +51,7 @@ $ff1:'Open Sans', sans-serif
     width: 1px
   &__side--liners::after
     
-    height: 89%
+    height: 100%
     right: 15%
     bottom: 0
     transform: translateX(-50%)
@@ -68,10 +68,9 @@ $ff1:'Open Sans', sans-serif
   background-size: cover
   height: 100vh
   &::before
-    height: calc( 100% - 380px  )
+    height: calc(100% - 115px)
     top: 220px
-  &::after
-    bottom: 0
+  
     
   
   &__container
@@ -80,6 +79,8 @@ $ff1:'Open Sans', sans-serif
     align-content: space-between
     &::before
       height: calc( 100% - 110px  )
+    &::after
+      height: calc(100% - 110px)
     
       
     
@@ -93,10 +94,11 @@ $ff1:'Open Sans', sans-serif
     justify-content: space-between
     flex-basis: 100%
   &__operating-box
-    width: 18px
+    width: 60px
   &__operating-mode
     display: block
-    width: 308px
+    width: 500%
+    font-size: 12px
     transform-origin: left
     transform: rotate(-90deg)translate(-50%,50%)
   &__box
