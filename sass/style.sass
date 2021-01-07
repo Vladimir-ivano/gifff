@@ -21,8 +21,8 @@ $ff1:'Open Sans', sans-serif
     padding: 0 15px
   &--same
     padding: 40px 15px 40px 15px
-  
-      
+  @media (max-width: 1200px)
+      max-width: 1200px
   /*header==========*/
 .screen
   &__center--liners:before
@@ -81,7 +81,7 @@ $ff1:'Open Sans', sans-serif
       height: calc( 100% - 110px  )
     &::after
       height: calc(100% - 110px)
-    
+    @media (max-width: 1200px)
       
     
     
@@ -140,6 +140,8 @@ $ff1:'Open Sans', sans-serif
     height: 60px
     flex-basis: 45%
     transition: 0.2s linear
+    &:focus
+      outline: none
     &:hover
       background: #E8C300
 
@@ -553,11 +555,6 @@ $ff1:'Open Sans', sans-serif
     &:hover
       color: #fff
 
-
-
-
-  
-
 /*section---picture==========*/
 .section__picture
   display: flex
@@ -573,7 +570,7 @@ $ff1:'Open Sans', sans-serif
     justify-content: space-between
     margin-bottom: 10px
   &--data
-      flex-basis: 420px
+      flex-basis: 33%
       margin-bottom: 0px
   &--msg
     flex-basis: 100%
