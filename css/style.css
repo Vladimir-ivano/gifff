@@ -135,6 +135,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 60px;
 }
 .header__operating-mode {
+  text-align: center;
   display: block;
   width: 500%;
   font-size: 12px;
@@ -145,6 +146,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 .header__subtitle {
+  margin: 0 auto;
   font-size: 12px;
   letter-spacing: 0.5em;
   font-family: "Open Sans", sans-serif;
@@ -168,10 +170,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50px;
   margin: 0 auto;
 }
-.header__btn {
+.header__buttons {
   cursor: pointer;
-  justify-self: center;
-  display: inline-block;
   color: #fff;
   font-family: "Open Sans", sans-serif;
   font-size: 12px;
@@ -181,14 +181,21 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgba(255, 255, 255, 0);
   border: 1px solid #fff;
   border-radius: 5px;
-  margin-left: 40px;
-  width: 200px;
   height: 60px;
-}
-.header__btn:hover {
-  background: #E8C300;
+  flex-basis: 45%;
   transition: 0.2s linear;
-  color: #000;
+}
+.header__buttons:hover {
+  background: #E8C300;
+}
+.header__buttons-box {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 60%;
+}
+.header__buttons:first-child {
+  margin-right: auto;
 }
 .header__down-btn {
   cursor: pointer;
