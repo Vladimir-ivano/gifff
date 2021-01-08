@@ -316,6 +316,11 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+@media (max-width: 1200px) {
+  .title {
+    font-size: 32px;
+  }
+}
 .title::after {
   display: block;
   content: "";
@@ -338,6 +343,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", sans-serif;
   margin-bottom: 20px;
 }
+@media (max-width: 1200px) {
+  .subtitle {
+    font-size: 16px;
+  }
+}
 
 .text {
   text-align: center;
@@ -358,6 +368,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
   flex-basis: calc( 100% - 680px  );
   text-align: center;
+}
+@media (max-width: 1200px) {
+  .article__content {
+    flex-basis: calc( 100% - 650px  );
+  }
 }
 .article__picture {
   cursor: pointer;
@@ -383,6 +398,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 80px;
   padding-right: 125px;
 }
+@media (max-width: 1200px) {
+  .article__picture--right {
+    margin-left: 68px;
+  }
+}
 .article__picture--right:before {
   right: 0;
 }
@@ -391,11 +411,22 @@ h1, h2, h3, h4, h5, h6 {
   width: 485px;
   height: 485px;
 }
+@media (max-width: 1200px) {
+  .article__picture:hover::before {
+    height: 455px;
+    width: 460px;
+  }
+}
 .article__image {
   border-radius: 5px;
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.5);
   height: 475px;
   width: auto;
+}
+@media (max-width: 1200px) {
+  .article__image {
+    height: 445px;
+  }
 }
 
 /*section---two========== */
@@ -434,6 +465,12 @@ h1, h2, h3, h4, h5, h6 {
   left: 20.4%;
   width: 485px;
   height: 485px;
+}
+@media (max-width: 1200px) {
+  .article__picture--left:hover::before {
+    height: 455px;
+    width: 460px;
+  }
 }
 
 /*section---three========== */
@@ -591,6 +628,11 @@ h1, h2, h3, h4, h5, h6 {
   columns: 360px auto;
   margin-right: 81px;
 }
+@media (max-width: 1200px) {
+  .menu {
+    margin-right: 38px;
+  }
+}
 .menu:last-child {
   margin-right: 0;
 }
@@ -678,6 +720,11 @@ h1, h2, h3, h4, h5, h6 {
   flex-basis: calc( 100% /4  );
   height: 360px;
 }
+@media (max-width: 1200px) {
+  .image {
+    height: 330px;
+  }
+}
 
 /*section---form========== */
 .form__contact {
@@ -708,6 +755,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   line-height: 14px;
   margin-right: 25px;
+}
+@media (max-width: 1200px) {
+  .form__contact__info__item {
+    font-size: 13.5px;
+    margin-right: 20px;
+  }
 }
 .form__contact__info__item:last-child {
   margin-right: 0;
