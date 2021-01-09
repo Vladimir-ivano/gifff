@@ -21,8 +21,10 @@ $ff1:'Open Sans', sans-serif
     padding: 0 15px
   &--same
     padding: 40px 15px 40px 15px
-  @media (max-width: 1200px)
-      max-width: 1200px
+  @media (max-width: 1280px)
+    max-width: 960px
+  @media (max-width: 960px)
+    max-width: 768px
   /*header==========*/
 .screen
   &__center--liners:before
@@ -118,6 +120,9 @@ $ff1:'Open Sans', sans-serif
     text-transform: uppercase
     font-family: $ff
     margin-bottom: 35px
+    @media (max-width: 1280px)
+      font-size: 75px
+   
     &::after
       display: block
       content: ""
@@ -232,6 +237,7 @@ $ff1:'Open Sans', sans-serif
     border-radius: 50%
     border: 1px solid #fff
     margin-bottom: 20px
+   
     &:hover
       transition: 0.5s linear
       border: #F4CA16
@@ -296,7 +302,7 @@ $ff1:'Open Sans', sans-serif
     flex-basis: calc( 100% - 680px  )
     text-align: center
     @media (max-width: 1200px)
-      flex-basis: calc( 100% - 650px  )
+      flex-basis: calc( 100% - 521px  )
   &__picture
     cursor: pointer
     display: inline-block
@@ -319,7 +325,7 @@ $ff1:'Open Sans', sans-serif
       margin-left: 80px
       padding-right: 125px
       @media (max-width: 1200px)
-        margin-left: 68px
+        margin-left: 78px
       &:before
         right: 0
     &:hover::before
@@ -327,8 +333,9 @@ $ff1:'Open Sans', sans-serif
       width: 485px
       height: 485px
       @media (max-width: 1200px)
-        height: 455px
-        width: 460px
+        right: 28%
+        height: 323px
+        width: 320px
     
   &__image
     border-radius: 5px
@@ -336,7 +343,7 @@ $ff1:'Open Sans', sans-serif
     height: 475px
     width: auto
     @media (max-width: 1200px)
-      height: 445px
+      height: 318px
     
       
   

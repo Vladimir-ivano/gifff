@@ -66,9 +66,14 @@ h1, h2, h3, h4, h5, h6 {
 .container--same {
   padding: 40px 15px 40px 15px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .container {
-    max-width: 1200px;
+    max-width: 960px;
+  }
+}
+@media (max-width: 960px) {
+  .container {
+    max-width: 768px;
   }
 }
 
@@ -165,6 +170,11 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-family: "Delius Unicase", cursive;
   margin-bottom: 35px;
+}
+@media (max-width: 1280px) {
+  .header__title {
+    font-size: 75px;
+  }
 }
 .header__title::after {
   display: block;
@@ -371,7 +381,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 1200px) {
   .article__content {
-    flex-basis: calc( 100% - 650px  );
+    flex-basis: calc( 100% - 521px  );
   }
 }
 .article__picture {
@@ -400,7 +410,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 1200px) {
   .article__picture--right {
-    margin-left: 68px;
+    margin-left: 78px;
   }
 }
 .article__picture--right:before {
@@ -413,8 +423,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 1200px) {
   .article__picture:hover::before {
-    height: 455px;
-    width: 460px;
+    right: 28%;
+    height: 323px;
+    width: 320px;
   }
 }
 .article__image {
@@ -425,7 +436,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 1200px) {
   .article__image {
-    height: 445px;
+    height: 318px;
   }
 }
 
