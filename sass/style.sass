@@ -372,15 +372,18 @@ $ff1:'Open Sans', sans-serif
   &__picture--left
     margin-right: 80px
     padding-left: 125px
+    @media (max-width: 1280px)
+      margin-right: 78px
     &:before
       left: 0
     &:hover::before
       left: 20.4%
       width: 485px
       height: 485px
-      @media (max-width: 1200px)
-        height: 455px
-        width: 460px
+      @media (max-width: 1280px)
+        left: 28%
+        height: 323px
+        width: 320px
       
 
 
@@ -514,7 +517,7 @@ $ff1:'Open Sans', sans-serif
   margin-top: 51px
   columns: 360px auto
   margin-right: 81px
-  @media (max-width: 1200px)
+  @media (max-width: 1280px)
     margin-right: 38px   
   &:last-child
       margin-right: 0
@@ -563,6 +566,8 @@ $ff1:'Open Sans', sans-serif
     padding: 27px 30px
     text-transform: uppercase
     width: calc(100% - 125px)
+    @media (max-width: 1280px)
+      font-size: 19px
     
   &__picture--left::after
     right: 80px
@@ -587,8 +592,8 @@ $ff1:'Open Sans', sans-serif
 .image
   flex-basis: calc( 100% /4  )
   height: 360px
-  @media (max-width: 1200px)
-    height: 330px  
+  @media (max-width: 1280px)
+    height: 312px  
 /*section---form==========*/
 .form__contact
   margin-top: 51px
@@ -613,7 +618,7 @@ $ff1:'Open Sans', sans-serif
       font-size: 14px
       line-height: 14px
       margin-right: 25px
-      @media (max-width: 1200px)
+      @media (max-width: 1280px)
         font-size: 13.5px
         margin-right: 20px
       &:last-child
@@ -627,6 +632,10 @@ $ff1:'Open Sans', sans-serif
 
     &__list
       flex-basis: 50%
+      @media (max-width: 1280px)
+        flex-basis: 65%
+        &:nth-child(2)
+          flex-basis: 35%
       &:first-child
         display: flex
 /*section---map==========*/
