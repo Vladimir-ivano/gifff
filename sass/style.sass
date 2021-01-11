@@ -219,22 +219,7 @@ $ff1:'Open Sans', sans-serif
     
     
 
-  .social__item
-    width: 60px
-    height: 60px
-    border-radius: 50%
-    border: 1px solid #fff
-    margin-bottom: 20px
-    &:hover
-      transition: 0.5s linear
-      border: #F4CA16
-      background-color: #F4CA16
-  &__link
-    display: flex
-    height: 100%
-    color: #fff
-    i
-      margin: auto
+  
 
   /*social==========*/ 
 
@@ -246,6 +231,9 @@ $ff1:'Open Sans', sans-serif
     border-radius: 50%
     border: 1px solid #fff
     margin-bottom: 20px
+    @media (max-width: 980px)
+      width: 40px
+      height: 40px
    
     &:hover
       transition: 0.5s linear
@@ -256,6 +244,8 @@ $ff1:'Open Sans', sans-serif
     height: 100%
     color: #fff
     font-size: 20px
+    @media (max-width: 980px)
+      font-size: 16px  
     i
       margin: auto
 /*section==========*/
@@ -314,9 +304,9 @@ $ff1:'Open Sans', sans-serif
       flex-basis: calc( 100% - 521px  )
     @media (max-width: 980px)
       margin: 0 auto
-      max-width: 500px
+      max-width: 90%
       flex-basis: 100%
-      margin-bottom: 20px
+      margin-bottom: 40px
   &__picture
     cursor: pointer
     display: inline-block
@@ -343,6 +333,8 @@ $ff1:'Open Sans', sans-serif
         margin-left: 78px
       @media (max-width: 980px)
         margin: 0 auto
+        margin-left: 228px
+        
       &:before
         right: 0
     &:hover::before
@@ -393,7 +385,9 @@ $ff1:'Open Sans', sans-serif
     @media (max-width: 1280px)
       margin-right: 78px
     @media (max-width: 980px)
-        margin: 0 auto
+        margin-left: 75px
+        margin-bottom: 25px
+        padding-left: 125px
     &:before
       left: 0
     &:hover::before
@@ -534,11 +528,13 @@ $ff1:'Open Sans', sans-serif
     &:focus
       outline: 0
 .menus
+  margin-top: 51px
   @media (max-width: 980px)
     text-align: center
+    margin-top: 20px
 .menu
   display: inline-block
-  margin-top: 51px
+  
   columns: 360px auto
   margin-right: 81px
   @media (max-width: 1280px)
@@ -578,11 +574,14 @@ $ff1:'Open Sans', sans-serif
     margin-right: 0
     @media (max-width: 980px)
       margin: 0 auto
+      margin-bottom: 25px
+      margin-left: 97px
     
   &__picture--right
     margin-left: 0
     @media (max-width: 980px)
       margin: 0 auto
+      margin-left: 219px
 .article
   &__picture:hover:after
     background-color: #E8C300
@@ -648,6 +647,8 @@ $ff1:'Open Sans', sans-serif
     height: 120px
     resize: none
     margin-bottom: 10px
+    @media (max-width: 980px)
+      margin-bottom: 5px
   &__info
     display: flex
     justify-content: space-between

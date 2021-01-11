@@ -288,26 +288,6 @@ h1, h2, h3, h4, h5, h6 {
 .nav__decor {
   margin: 0 auto;
 }
-.nav .social__item {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 1px solid #fff;
-  margin-bottom: 20px;
-}
-.nav .social__item:hover {
-  transition: 0.5s linear;
-  border: #F4CA16;
-  background-color: #F4CA16;
-}
-.nav__link {
-  display: flex;
-  height: 100%;
-  color: #fff;
-}
-.nav__link i {
-  margin: auto;
-}
 
 .social__item {
   width: 60px;
@@ -315,6 +295,12 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   border: 1px solid #fff;
   margin-bottom: 20px;
+}
+@media (max-width: 980px) {
+  .social__item {
+    width: 40px;
+    height: 40px;
+  }
 }
 .social__item:hover {
   transition: 0.5s linear;
@@ -326,6 +312,11 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   color: #fff;
   font-size: 20px;
+}
+@media (max-width: 980px) {
+  .social__link {
+    font-size: 16px;
+  }
 }
 .social__link i {
   margin: auto;
@@ -402,9 +393,9 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 980px) {
   .article__content {
     margin: 0 auto;
-    max-width: 500px;
+    max-width: 90%;
     flex-basis: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 }
 .article__picture {
@@ -439,6 +430,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 980px) {
   .article__picture--right {
     margin: 0 auto;
+    margin-left: 228px;
   }
 }
 .article__picture--right:before {
@@ -504,7 +496,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 980px) {
   .article__picture--left {
-    margin: 0 auto;
+    margin-left: 75px;
+    margin-bottom: 25px;
+    padding-left: 125px;
   }
 }
 .article__picture--left:before {
@@ -677,15 +671,18 @@ h1, h2, h3, h4, h5, h6 {
   outline: 0;
 }
 
+.menus {
+  margin-top: 51px;
+}
 @media (max-width: 980px) {
   .menus {
     text-align: center;
+    margin-top: 20px;
   }
 }
 
 .menu {
   display: inline-block;
-  margin-top: 51px;
   columns: 360px auto;
   margin-right: 81px;
 }
@@ -740,6 +737,8 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 980px) {
   .events__picture--left {
     margin: 0 auto;
+    margin-bottom: 25px;
+    margin-left: 97px;
   }
 }
 .events__picture--right {
@@ -748,6 +747,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 980px) {
   .events__picture--right {
     margin: 0 auto;
+    margin-left: 219px;
   }
 }
 
@@ -836,6 +836,11 @@ h1, h2, h3, h4, h5, h6 {
   height: 120px;
   resize: none;
   margin-bottom: 10px;
+}
+@media (max-width: 980px) {
+  .form__contact--msg {
+    margin-bottom: 5px;
+  }
 }
 .form__contact__info {
   display: flex;
