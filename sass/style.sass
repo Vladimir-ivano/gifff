@@ -29,6 +29,8 @@ $ff1:'Open Sans', sans-serif
     max-width: 960px
   @media (max-width: 980px)
     max-width: 768px
+  @media (max-width: 768px)
+    max-width: 320px
   /*header==========*/
 .screen
   &__center--liners:before
@@ -41,6 +43,8 @@ $ff1:'Open Sans', sans-serif
     display: block
     position: absolute
     width: 1px
+    @media (max-width: 768px)
+      display: none
  
    
 
@@ -55,6 +59,8 @@ $ff1:'Open Sans', sans-serif
     display: block
     position: absolute
     width: 1px
+    @media (max-width: 768px)
+      display: none
   &__side--liners::after
     
     height: 100%
@@ -67,6 +73,8 @@ $ff1:'Open Sans', sans-serif
     display: block
     position: absolute
     width: 1px
+    @media (max-width: 768px)
+      display: none
     
 
 .header
@@ -194,7 +202,8 @@ $ff1:'Open Sans', sans-serif
 
     &--left
       order: -1
-      
+      @media (max-width: 768px)
+        order: 0
       
   &__item
     display: flex
@@ -326,6 +335,10 @@ $ff1:'Open Sans', sans-serif
         transform: translateY(-50%)
         transition: all 0.4s ease 0.1s
         animation: rotate 0.6s infiniti linear
+        @media (max-width: 768px)
+          width: 337px
+          height: 337px
+    
     &--right
       margin-left: 80px
       padding-right: 125px
@@ -334,6 +347,9 @@ $ff1:'Open Sans', sans-serif
       @media (max-width: 980px)
         margin: 0 auto
         margin-left: 228px
+      @media (max-width: 768px)
+        padding-right: 0px
+        margin: 0 auto
         
       &:before
         right: 0
@@ -345,7 +361,7 @@ $ff1:'Open Sans', sans-serif
         right: 28%
         height: 323px
         width: 320px
-    
+      
   &__image
     border-radius: 5px
     box-shadow: 0 0 35px rgba(0,0,0,0.5)
@@ -353,6 +369,7 @@ $ff1:'Open Sans', sans-serif
     width: auto
     @media (max-width: 1280px)
       height: 318px
+
     
       
   
@@ -385,11 +402,17 @@ $ff1:'Open Sans', sans-serif
     @media (max-width: 1280px)
       margin-right: 78px
     @media (max-width: 980px)
-        margin-left: 75px
-        margin-bottom: 25px
-        padding-left: 125px
+      margin-left: 75px
+      margin-bottom: 25px
+      padding-left: 125px
+    @media (max-width: 768px)
+      padding-left: 0px
+      margin-left: -27px
     &:before
       left: 0
+      @media (max-width: 768px)
+        width: 337px
+        height: 337px
     &:hover::before
       left: 20.4%
       width: 485px
@@ -413,6 +436,8 @@ $ff1:'Open Sans', sans-serif
   &__row
     width: 49%
     text-align: left
+    @media (max-width: 768px)
+      width: 100%
     &__input
       width: 100%
       height: 60px
@@ -455,6 +480,9 @@ $ff1:'Open Sans', sans-serif
   color: rgba(51, 51, 51, 0.5)
   margin-top: 40px
   transition: .3s linear
+  @media (max-width: 768px)
+    font-size: 12px
+    line-height: 19px
   &:hover
     color: rgba(51, 51, 51, 0.9)
 .article__texti
@@ -541,11 +569,15 @@ $ff1:'Open Sans', sans-serif
     margin-right: 38px
   @media (max-width: 980px)
     margin-top: 24px
+  @media (max-width: 768px)
+    margin-right: 0
     
   &:last-child
       margin-right: 0
       @media (max-width: 980px)
         margin-right: 38px
+      @media (max-width: 768px)
+        margin-right: 0
   &__item
     font-family: $ff1
     height: 66px
@@ -576,12 +608,15 @@ $ff1:'Open Sans', sans-serif
       margin: 0 auto
       margin-bottom: 25px
       margin-left: 97px
-    
+    @media (max-width: 768px)
+      margin-left: -15px
   &__picture--right
     margin-left: 0
     @media (max-width: 980px)
       margin: 0 auto
       margin-left: 219px
+    @media (max-width: 768px)
+      margin-left: 0px
 .article
   &__picture:hover:after
     background-color: #E8C300
@@ -604,12 +639,13 @@ $ff1:'Open Sans', sans-serif
     width: calc(100% - 125px)
     @media (max-width: 1280px)
       font-size: 19px
-    
+    @media (max-width: 768px)
+      font-size: 17px
   &__picture--left::after
     right: 80px
     transform-origin: right bottom
     transform: rotate(90deg)
-  
+    
   &__picture--text::after
     content: attr(data-info)
   &__picture--right::after
@@ -632,6 +668,8 @@ $ff1:'Open Sans', sans-serif
     height: 312px 
   @media (max-width: 980px)
     flex-basis: calc( 100% /2  )
+  @media (max-width: 768px)
+    flex-basis: 100%
 /*section---form==========*/
 .form__contact
   margin-top: 51px
@@ -639,9 +677,15 @@ $ff1:'Open Sans', sans-serif
     display: flex
     justify-content: space-between
     margin-bottom: 10px
+    @media (max-width: 768px)
+        flex-wrap: wrap
+        margin-bottom: 5px
   &--data
       flex-basis: 33%
       margin-bottom: 0px
+      @media (max-width: 768px)
+        flex-basis: 100%
+        margin-bottom: 5px
   &--msg
     flex-basis: 100%
     height: 120px
@@ -662,6 +706,9 @@ $ff1:'Open Sans', sans-serif
       @media (max-width: 1280px)
         font-size: 13.5px
         margin-right: 20px
+      @media (max-width: 768px)
+        margin-bottom: 10px
+        text-align: center
       &:last-child
         margin-right: 0
       i
@@ -678,6 +725,8 @@ $ff1:'Open Sans', sans-serif
         @media (max-width: 980px)
           flex-basis: 100%
           justify-content: center
+        @media (max-width: 768px)
+          flex-wrap: wrap
         &:nth-child(2)
           flex-basis: 35%
           @media (max-width: 980px)
