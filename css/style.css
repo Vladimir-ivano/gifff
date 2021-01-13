@@ -147,6 +147,7 @@ h1, h2, h3, h4, h5, h6 {
   background: url(../photo/header-bg.jpg) no-repeat center;
   background-size: cover;
   height: 100vh;
+  /*menu========== */
 }
 .header::before {
   height: calc(100% - 115px);
@@ -289,6 +290,51 @@ h1, h2, h3, h4, h5, h6 {
   background: #E8C300;
 }
 
+.menis {
+  display: none;
+}
+.menis__burger {
+  display: block;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 9px 0;
+}
+.menis__burger__item {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 30px;
+  height: 3px;
+  position: relative;
+}
+.menis__burger__item::after {
+  position: absolute;
+  content: "";
+  display: block;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 30px;
+  height: 3px;
+  left: 0;
+  top: -10px;
+}
+.menis__burger__item:before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 30px;
+  height: 3px;
+  left: 0;
+  top: 10px;
+}
+@media (max-width: 768px) {
+  .menis {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
 /*nav========== */
 .nav {
   display: flex;
@@ -335,6 +381,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .nav__decor {
   margin: 0 auto;
+}
+@media (max-width: 760px) {
+  .nav {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -457,7 +508,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 980px) {
   .article__content {
     flex-basis: 100%;
-    max-width: 70%;
+    max-width: 90%;
     margin-bottom: 40px;
   }
 }
