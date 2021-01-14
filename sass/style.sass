@@ -199,9 +199,12 @@ $ff1:'Open Sans', sans-serif
 
   /*menu==========*/
 .menis
-  display: none
   
+  display: none
+  &__decor
+    
   &__burger
+    
     display: block
     background: none
     border: 0
@@ -234,9 +237,10 @@ $ff1:'Open Sans', sans-serif
            
   @media (max-width: 768px)
     display: flex
-
+    flex-basis: 100%
     align-items: center
     justify-content: space-around
+    margin-bottom: 20px
 /*nav==========*/
 .nav
   display: flex
@@ -656,9 +660,9 @@ $ff1:'Open Sans', sans-serif
     @media (max-width: 980px)
       margin: 0 auto
       margin-bottom: 25px
-      margin-left: 97px
+      margin-left: 222px
     @media (max-width: 768px)
-      margin-left: -15px
+      margin-left: 1px
   &__picture--right
     margin-left: 0
     @media (max-width: 980px)
@@ -689,7 +693,10 @@ $ff1:'Open Sans', sans-serif
     width: calc(100% - 125px)
     @media (max-width: 1280px)
       font-size: 19px
+    @media (max-width: 980px)
+      width: 100%
     @media (max-width: 768px)
+      width: 100%
       font-size: 17px
   &__picture--left::after
     right: 80px
@@ -699,7 +706,7 @@ $ff1:'Open Sans', sans-serif
   &__picture--text::after
     content: attr(data-info)
   &__picture--right::after
-    right: 45px
+    left: 86px
     transform-origin: left bottom
     transform: rotate(-90deg)
   &--tex
